@@ -1,3 +1,5 @@
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
 
@@ -10,6 +12,7 @@ const AboutUs = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+<Navbar />
       <section className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-start max-w-full">
         <header className="self-stretch overflow-hidden flex flex-col items-center justify-start py-[27px] px-5 box-border gap-[6px_0px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
           <h1 className="m-0 h-[46px] relative text-inherit font-bold font-inherit inline-block whitespace-nowrap">
@@ -66,6 +69,7 @@ const AboutUs = () => {
           onClick={onContactUsNowClick}
         >{`Contact Us Now! `}</h1>
       </footer>
+<Footer/>
     </div>
   );
 };

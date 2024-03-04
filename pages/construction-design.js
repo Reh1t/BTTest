@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const ConstructionDesign = () => {
   const router = useRouter();
 
@@ -19,6 +20,7 @@ const ConstructionDesign = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-5 px-0 pb-[30px] box-border gap-[10px_0px] tracking-[normal]">
+<Navbar />
       <section className="w-[1382px] flex flex-row items-center justify-start pt-0 px-5 pb-[47px] box-border gap-[0px_92px] max-w-full text-left text-5xl text-kuno-red font-footer-bold-text mq750:gap-[0px_92px] mq750:pb-[31px] mq750:box-border mq450:gap-[0px_92px] mq1225:flex-wrap">
         <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-3 box-border min-w-[473px] max-w-full mq750:min-w-full">
           <div className="self-stretch flex flex-col items-center justify-start gap-[20px_0px]">
@@ -71,7 +73,7 @@ const ConstructionDesign = () => {
             loading="lazy"
             alt=""
             src="/adobestock-471485886-1-121@2x.png"
-          />
+            />
         </div>
       </section>
       <section className="self-stretch flex flex-col items-center justify-start pt-0 px-0 pb-7 box-border gap-[27px_0px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
@@ -84,7 +86,7 @@ const ConstructionDesign = () => {
             loading="lazy"
             alt=""
             src="/adobestock-278545655-2-12@2x.png"
-          />
+            />
         </div>
       </section>
       <section className="w-[1280px] flex flex-row flex-wrap items-start justify-start pt-0 px-5 pb-7 box-border gap-[0px_17px] max-w-full text-left text-base text-kuno-red font-footer-bold-text">
@@ -164,7 +166,7 @@ const ConstructionDesign = () => {
         <div
           className="flex-1 flex flex-col items-center justify-center gap-[10px_0px] max-w-full"
           data-scroll-to="materialAndMethodConsiderat"
-        >
+          >
           <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-[27px] px-5 box-border max-w-full">
             <h1 className="m-0 relative text-inherit font-bold font-inherit inline-block max-w-full mq750:text-13xl mq450:text-5xl">
               Material and Method Consideration: A Strategic Choice
@@ -277,8 +279,9 @@ const ConstructionDesign = () => {
           className="w-[818px] relative rounded-3xs max-h-full object-cover max-w-full"
           alt=""
           src="/adobestock-278545655-2-1-1@2x.png"
-        />
+          />
       </section>
+      <Footer/>
     </div>
   );
 };

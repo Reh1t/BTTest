@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const ConceptualModellingPlannin1 = () => {
   const router = useRouter();
 
@@ -10,6 +11,7 @@ const ConceptualModellingPlannin1 = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+<Navbar />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-5 px-0 box-border max-w-full [row-gap:20px] text-left text-5xl text-kuno-red font-footer-bold-text">
         <div className="flex-1 flex flex-col items-start justify-start py-0 pr-10 pl-0 box-border gap-[16px_0px] min-w-[462px] max-w-full mq750:min-w-full">
           <h3 className="m-0 relative text-inherit font-normal font-inherit mq450:text-lgi">
@@ -34,7 +36,7 @@ const ConceptualModellingPlannin1 = () => {
           <h3
             className="m-0 w-[623px] relative text-inherit text-orangered text-justify inline-block max-w-full cursor-pointer font-inherit mq450:text-lgi"
             onClick={onTheConceptualModelClick}
-          >
+            >
             <p className="m-0">
               <span className="font-footer-bold-text">{`The `}</span>
               <b className="font-footer-bold-text">Conceptual Model Plan</b>
@@ -52,7 +54,7 @@ const ConceptualModellingPlannin1 = () => {
             loading="lazy"
             alt=""
             src="/adobestock-471485886-1-111@2x.png"
-          />
+            />
         </div>
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-col items-start justify-start max-w-full text-center text-21xl text-kuno-red font-footer-bold-text">
@@ -133,7 +135,7 @@ Expert Guidance`}</li>
               loading="lazy"
               alt=""
               src="/modelplanspage2-1-1@2x.png"
-            />
+              />
           </div>
         </div>
         <div className="h-[621px] w-[491px] flex flex-col items-center justify-center p-5 box-border min-w-[491px] max-w-full lg:flex-1 mq750:min-w-full">
@@ -142,7 +144,7 @@ Expert Guidance`}</li>
             loading="lazy"
             alt=""
             src="/vector-1.svg"
-          />
+            />
         </div>
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-col items-start justify-start max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
@@ -157,7 +159,7 @@ Expert Guidance`}</li>
             loading="lazy"
             alt=""
             src="/adobestock-278545655-2-11@2x.png"
-          />
+            />
         </div>
       </section>
       <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-start py-6 px-[60px] box-border max-w-full [row-gap:20px] text-left text-base text-kuno-red font-footer-bold-text mq750:pl-[30px] mq750:pr-[30px] mq750:box-border">
@@ -213,6 +215,7 @@ Expert Guidance`}</li>
           </div>
         </div>
       </section>
+<Footer/>
     </div>
   );
 };

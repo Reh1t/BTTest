@@ -1,6 +1,9 @@
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const ConstructionManagement = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-3 px-0 pb-5 box-border gap-[34px_0px] tracking-[normal] mq800:gap-[34px_0px]">
+<Navbar />
       <section className="w-[1298px] flex flex-row items-start justify-start py-0 px-5 box-border max-w-full text-left text-xl text-kuno-red font-footer-bold-text">
         <div className="w-[727px] flex flex-col items-start justify-start gap-[8px_0px] max-w-full">
           <div className="w-[351px] relative font-medium inline-block max-w-full mq450:text-base">
@@ -137,7 +140,7 @@ const ConstructionManagement = () => {
               loading="lazy"
               alt=""
               src="/helicopter-lumber-1@2x.png"
-            />
+              />
           </div>
           <div className="w-[1260px] flex flex-col items-center justify-start gap-[20px_0px] max-w-full">
             <div className="flex flex-row items-start justify-start pt-0 pb-2.5 pr-[21px] pl-0 box-border max-w-full text-21xl">
@@ -193,6 +196,7 @@ const ConstructionManagement = () => {
           </div>
         </div>
       </section>
+              <Footer/>
     </div>
   );
 };

@@ -1,7 +1,8 @@
 import { useCallback } from "react";
 import { useRouter } from "next/router";
 import OpenRiserStaircases from "../components/open-riser-staircases";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const StaircasesPages = () => {
   const router = useRouter();
 
@@ -15,6 +16,7 @@ const StaircasesPages = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+<Navbar />
       <section className="self-stretch bg-white overflow-hidden flex flex-col items-start justify-start text-left text-45xl text-white font-footer-bold-text">
         <div className="self-stretch overflow-hidden flex flex-col items-start justify-start relative gap-[10px_0px]">
           <div className="self-stretch flex flex-col items-start justify-start">
@@ -22,7 +24,7 @@ const StaircasesPages = () => {
               className="self-stretch relative max-w-full overflow-hidden max-h-full object-cover"
               alt=""
               src="/adobestock-646941552-4-1-1@2x.png"
-            />
+              />
           </div>
           <h2 className="!m-[0] absolute top-[256px] left-[calc(50%_-_502px)] text-inherit font-bold font-inherit [text-shadow:0px_4px_10px_rgba(0,_0,_0,_0.65)] z-[1] mq825:text-32xl mq450:text-19xl">
             <p className="m-0">Custom</p>
@@ -36,7 +38,7 @@ const StaircasesPages = () => {
             loading="lazy"
             alt=""
             src="/vectical-line.svg"
-          />
+            />
           <img
             className="w-32 h-0 absolute !m-[0] top-[99px] left-[76px] object-contain z-[1]"
             loading="lazy"
@@ -106,7 +108,7 @@ const StaircasesPages = () => {
         frame25="/frame-25@2x.png"
         openRiserStaircases="Open Riser Staircases "
         elevateYourHomeWithOurExq="Elevate your home with our exquisite open riser staircases, where modern design meets timeless elegance. Our thoughtfully
-crafted staircases not only create a striking visual impact but
+        crafted staircases not only create a striking visual impact but
 also invite natural light to dance through, seamlessly blending
 innovation and sophistication in every step."
       />
@@ -128,7 +130,7 @@ innovation and sophistication in every step."
           loading="lazy"
           alt=""
           src="/frame-25-1@2x.png"
-        />
+          />
       </section>
       <OpenRiserStaircases
         frame25="/frame-25-2@2x.png"
@@ -165,7 +167,7 @@ innovation and sophistication in every step."
             loading="lazy"
             alt=""
             src="/frame-31@2x.png"
-          />
+            />
         </div>
       </section>
       <footer className="self-stretch bg-sandybrown overflow-hidden flex flex-col items-center justify-center py-[38px] px-5 box-border max-w-full text-left text-45xl text-white font-footer-bold-text">
@@ -177,6 +179,7 @@ innovation and sophistication in every step."
           <p className="m-0">are you ready to create one together ?</p>
         </h2>
       </footer>
+<Footer/>
     </div>
   );
 };

@@ -1,8 +1,10 @@
 import Card1 from "../components/card1";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const CarpentryPage = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-end justify-start tracking-[normal] text-left text-21xl text-kuno-red font-footer-bold-text">
+<Navbar />
       <div className="w-[1440px] h-[1322px] relative bg-white overflow-x-auto shrink-0 max-w-full">
         <header className="w-[1439px] overflow-hidden flex flex-col items-center justify-between p-5 box-border min-h-[152px] max-w-full text-left text-xl text-kuno-red font-footer-bold-text">
           <h1 className="m-0 relative text-21xl font-bold font-inherit">
@@ -21,7 +23,7 @@ const CarpentryPage = () => {
           photoPlaceholder="/photo-placeholder2@2x.png"
           design="Design"
           aVirtualCanvasForYourDrea="Crafting your dream home from concept to completion with expert precision and attention to detail"
-        />
+          />
         <Card1
           photoPlaceholder="/photo-placeholder-12@2x.png"
           design={`Additions & Renovations`}
@@ -31,7 +33,7 @@ const CarpentryPage = () => {
           lEARNMOREAlignSelf="unset"
           lEARNMOREPadding="0px 14px 0px 5px"
           propFlex="unset"
-        />
+          />
         <Card1
           photoPlaceholder="/photo-placeholder-22@2x.png"
           design="Kitchens "
@@ -41,7 +43,7 @@ const CarpentryPage = () => {
           lEARNMOREAlignSelf="stretch"
           lEARNMOREPadding="0px 19px 0px 0px"
           propFlex="1"
-        />
+          />
         <Card1
           photoPlaceholder="/photo-placeholder-32@2x.png"
           design="Washrooms"
@@ -51,7 +53,7 @@ const CarpentryPage = () => {
           lEARNMOREAlignSelf="stretch"
           lEARNMOREPadding="0px 14px 0px 5px"
           propFlex="1"
-        />
+          />
         <Card1
           photoPlaceholder="/photo-placeholder-41@2x.png"
           design="Accessible Construction"
@@ -160,7 +162,7 @@ const CarpentryPage = () => {
               loading="lazy"
               alt=""
               src="/shoemoulding-1@2x.png"
-            />
+              />
           </div>
         </div>
         <div className="self-stretch overflow-hidden flex flex-col items-start justify-start gap-[30px_0px] max-w-full text-justify">
@@ -193,6 +195,7 @@ const CarpentryPage = () => {
           </footer>
         </div>
       </section>
+      <Footer/>
     </div>
   );
 };

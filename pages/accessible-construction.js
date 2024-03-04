@@ -1,6 +1,7 @@
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const AccessibleConstruction = () => {
   const router = useRouter();
 
@@ -25,6 +26,7 @@ const AccessibleConstruction = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-14 px-0 pb-0 box-border gap-[28px_0px] tracking-[normal]">
+<Navbar />
       <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-7 pr-[23px] pl-[49px] box-border max-w-full mq750:pl-6 mq750:box-border">
         <header className="flex-1 flex flex-row items-start justify-start gap-[0px_37px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq750:gap-[0px_37px]">
           <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
@@ -66,7 +68,7 @@ const AccessibleConstruction = () => {
               className="self-stretch h-[365px] relative rounded-3xs max-w-full overflow-hidden shrink-0 object-cover hidden"
               alt=""
               src="/adobestock-471485886-1-16@2x.png"
-            />
+              />
           </div>
         </header>
       </section>
@@ -160,7 +162,7 @@ const AccessibleConstruction = () => {
             <button
               className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
               onClick={onButton1Click}
-            >
+              >
               <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
                 LEARN MORE
               </div>
@@ -241,6 +243,7 @@ const AccessibleConstruction = () => {
           </div>
         </button>
       </footer>
+<Footer/>
     </div>
   );
 };

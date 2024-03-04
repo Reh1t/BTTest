@@ -1,10 +1,12 @@
 import LinksHolderFrame from "../components/links-holder-frame";
 import LetUsHelpYou from "../components/let-us-help-you";
 import Material from "../components/material";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const DECKSPATIOS = () => {
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-14 px-0 pb-2.5 box-border tracking-[normal]">
+<Navbar />
       <LinksHolderFrame />
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-2.5 px-0 box-border gap-[0px_131px] max-w-full text-left text-5xl text-kuno-red font-footer-bold-text mq750:gap-[0px_131px] mq450:gap-[0px_131px] mq1150:flex-wrap">
         <div className="w-[615px] overflow-hidden shrink-0 flex flex-row items-start justify-start py-0 px-5 box-border min-w-[615px] max-w-full mq750:min-w-full mq1150:flex-1">
@@ -64,6 +66,7 @@ const DECKSPATIOS = () => {
           stunning outdoor space that you'll enjoy for years to come.
         </footer>
       </section>
+<Footer/>
     </div>
   );
 };

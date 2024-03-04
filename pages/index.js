@@ -1,3 +1,5 @@
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 import { useCallback } from "react";
 import HeroSection from "../components/hero-section";
 import HonoringTraditionEmbracingI from "../components/honoring-tradition-embracing-i";
@@ -6,7 +8,6 @@ import BathroomsCarpentry from "../components/bathrooms-carpentry";
 import Showers from "../components/showers";
 import ConceptualModellingPlannin from "../components/conceptual-modelling-plannin";
 import AscentToEleganceWhereSta from "../components/ascent-to-elegance-where-sta";
-import Footer from "../components/footer";
 import { useRouter } from "next/router";
 import NewsletterCTA from "../components/newsletter-c-t-a";
 
@@ -23,6 +24,7 @@ const LandingPageHomePage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start tracking-[normal]">
+      <Navbar />
       <HeroSection />
       <HonoringTraditionEmbracingI />
       <DesignThatSizzles />

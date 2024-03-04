@@ -3,7 +3,8 @@ import CaseworkHeroSection from "../components/casework-hero-section";
 import BathroomsCarpentry2 from "../components/bathrooms-carpentry2";
 import BathroomsCarpentry1 from "../components/bathrooms-carpentry1";
 import { useRouter } from "next/router";
-
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
 const CaseworkPage = () => {
   const router = useRouter();
 
@@ -17,6 +18,7 @@ const CaseworkPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+<Navbar />
       <CaseworkHeroSection />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_102px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:gap-[50px_102px] lg:pl-[33px] lg:pr-9 lg:box-border mq750:gap-[50px_102px] mq750:pt-9 mq750:pb-9 mq750:box-border">
         <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
@@ -81,7 +83,7 @@ const CaseworkPage = () => {
             loading="lazy"
             alt=""
             src="/photo1@2x.png"
-          />
+            />
         </div>
       </section>
       <section className="self-stretch overflow-hidden flex flex-row flex-wrap items-center justify-between py-2.5 pr-[105px] pl-[97px] box-border max-w-full gap-[20px] text-justify text-xl text-kuno-red font-footer-bold-text mq450:pl-5 mq450:pr-5 mq450:box-border mq750:pl-12 mq750:pr-[52px] mq750:box-border">
@@ -131,9 +133,10 @@ const CaseworkPage = () => {
           <b
             className="relative text-21xl font-footer-bold-text text-white text-center cursor-pointer"
             onClick={onContactUsNowClick}
-          >{`Contact Us Now! `}</b>
+            >{`Contact Us Now! `}</b>
         </button>
       </footer>
+<Footer/>
     </div>
   );
 };
