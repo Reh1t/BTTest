@@ -50,7 +50,7 @@ const Navbar = () => {
                 )}
             </div>
             <footer className="w-full max-w-[1240px] mx-auto flex flex-row items-center justify-between gap-4 md:flex-row md:justify-between md:gap-8 px-4 md:px-0 text-left text-xl text-gray font-footer-bold-text">
-                <img
+                <img 
                     className="h-12 w-48 object-cover"
                     loading="lazy"
                     alt=""

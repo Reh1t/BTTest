@@ -2,7 +2,15 @@ const DesignCard = ({
   photoPlaceholder,
   design,
   aVirtualCanvasForYourDrea,
+  navigateTo, // New prop for navigation
 }) => {
+  // Function to handle navigation
+  const handleNavigation = () => {
+    if (navigateTo) {
+      window.location.href = navigateTo; // Directly navigate to the URL
+    }
+  };
+
   return (
     <div className="self-stretch w-[305px] rounded-3xs bg-kuno-greywhite overflow-hidden shrink-0 flex flex-col items-center justify-start gap-[3px_0px] text-left text-5xl text-kuno-red font-footer-bold-text">
       <img
@@ -22,7 +30,11 @@ const DesignCard = ({
         </div>
       </div>
       <div className="self-stretch overflow-hidden flex flex-col items-center justify-end py-[7px] px-5 text-xs text-sandybrown">
-        <div className="w-[99px] rounded-mini box-border flex flex-row items-center justify-between py-1.5 px-0 gap-[10px] border-[2px] border-solid border-sandybrown">
+        {/* "Learn more" button with navigation */}
+        <div
+          className="max-w-[99px] rounded-mini box-border flex flex-row items-center justify-center py-1.5 px-2 gap-[10px] border-[2px] border-solid border-sandybrown"
+          onClick={handleNavigation} // Click event handler
+        >
           <div className="relative whitespace-nowrap">LEARN MORE</div>
         </div>
       </div>
