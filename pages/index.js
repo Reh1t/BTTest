@@ -9,7 +9,6 @@ import AscentToEleganceWhereSta from "../components/ascent-to-elegance-where-sta
 import Footer from "../components/footer";
 import { useRouter } from "next/router";
 import NewsletterCTA from "../components/newsletter-c-t-a";
-import StorageSolutions from "../components/StorageSolutions";
 
 const LandingPageHomePage = () => {
   const router = useRouter();
