@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
+    const router = useRouter();
     const [nav, setNav] = useState(false);
     const [isMediumOrSmallScreen, setIsMediumOrSmallScreen] = useState(false);
 
@@ -13,6 +15,10 @@ const Navbar = () => {
             setNav(false);
         }
     };
+
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
 
     // Set up event listener for window resize
     useEffect(() => {
@@ -49,7 +55,7 @@ const Navbar = () => {
                     </div>
                 )}
             </div>
-            <footer className="w-full max-w-[1240px] mx-auto flex flex-row items-center justify-between gap-4 md:flex-row md:justify-between md:gap-8 px-4 md:px-0 text-left text-xl text-gray font-footer-bold-text">
+            <footer className="cursor-pointer w-full max-w-[1240px] mx-auto flex flex-row items-center justify-between gap-4 md:flex-row md:justify-between md:gap-8 px-4 md:px-0 text-left text-xl text-gray font-footer-bold-text" onClick={() => handleNavigation("/")}>
                 <img 
                     className="h-12 w-48 object-cover"
                     loading="lazy"
@@ -57,7 +63,7 @@ const Navbar = () => {
                     src="/bt-logo-2024-long@2x.png"
                 />
                 <div className="w-full sm:w-[443px] flex flex-row items-start justify-start gap-4 max-w-full">
-                    <div className="relative">
+                    <div className="relative ">
                         <select onChange={handleDropdownChange}>
                             <option value="design-page">Design</option>
                             <option value="conceptual-modelling-plannin1">Conceptual Modelling</option>
