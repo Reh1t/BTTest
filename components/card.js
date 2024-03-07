@@ -10,6 +10,8 @@ const Card = ({
   propHeight,
   onMainTextContainerClick,
   onDesignText2Click,
+  onLearnMoreClick,
+  pageName, // New prop to pass the page name dynamically
 }) => {
   const cardStyle = useMemo(() => {
     return {
@@ -61,8 +63,11 @@ const Card = ({
           {aVirtualCanvasForYourDrea}
         </div>
       </div>
-      <div className="self-stretch overflow-hidden flex flex-col items-center justify-end py-[7px] px-5 text-xs text-sandybrown">
-        <div className="w-[99px] rounded-mini box-border flex flex-row items-center justify-between py-1.5 px-0 gap-[10px] border-[2px] border-solid border-sandybrown">
+      <div
+        className="self-stretch overflow-hidden flex flex-col items-center justify-end py-[7px] px-5 text-xs text-sandybrown cursor-pointer"
+        onClick={() => onLearnMoreClick(pageName)} // Pass pageName to onLearnMoreClick
+      >
+        <div className="w-[99px] rounded-mini box-border flex flex-row items-center justify-center py-1.5 px-0 gap-[10px] border-[2px] border-solid border-sandybrown">
           <div className="relative whitespace-nowrap">LEARN MORE</div>
         </div>
       </div>
