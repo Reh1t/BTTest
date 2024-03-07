@@ -58,13 +58,13 @@ const DECKSPATIOS = () => {
         <h1 className="m-0 relative text-inherit font-bold font-inherit inline-block max-w-full mq1050:text-13xl mq450:text-5xl">
           Quality Craftsmanship, Lasting Results
         </h1>
-        <footer className="w-[1320px] relative text-base font-footer-bold-text text-kuno-red text-justify inline-block">
-          At Building Tradition we take pride in our attention to detail and
-          commitment to quality craftsmanship. Using only the highest quality
-          materials and industry-leading techniques, our skilled artisans will
-          bring your patio vision to life with precision and care. The result? A
-          stunning outdoor space that you'll enjoy for years to come.
-        </footer>
+        <footer className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 relative text-base font-footer-bold-text text-kuno-red text-justify">
+      At Building Tradition we take pride in our attention to detail and
+      commitment to quality craftsmanship. Using only the highest quality
+      materials and industry-leading techniques, our skilled artisans will bring
+      your patio vision to life with precision and care. The result? A stunning
+      outdoor space that you'll enjoy for years to come.
+    </footer>
       </section>
 <Footer/>
     </div>

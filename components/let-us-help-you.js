@@ -50,12 +50,8 @@ const LetUsHelpYou = () => {
             </div>
           </div>
         </div>
-        <div className="h-[436px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start bg-[url('/photo1@2x.png')] bg-cover bg-no-repeat bg-[top] min-w-[425px] max-w-full mq750:min-w-full">
-          <img
-            className="self-stretch h-[436px] relative max-w-full overflow-hidden shrink-0 object-cover hidden"
-            alt=""
-            src="/photo1@2x.png"
-          />
+        <div className="h-[436px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start bg-[url('/AdobeStock_58670119.jpeg')] bg-cover bg-no-repeat bg-[top] min-w-[425px] max-w-full mq750:min-w-full">
+          
         </div>
       </div>
     </section>

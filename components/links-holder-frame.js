@@ -55,11 +55,12 @@ const LinksHolderFrame = () => {
             </div>
           </div>
         </div>
-        <div className="h-[436px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start bg-[url('/adobestock-471485886-1-13@2x.png')] bg-cover bg-no-repeat bg-[top] min-w-[425px] max-w-full mq750:min-w-full">
+        <div className="w-[615px] overflow-hidden shrink-0 flex flex-row items-start justify-start py-0 px-5 box-border min-w-[615px] max-w-full mq750:min-w-full mq1150:flex-1">
           <img
-            className="self-stretch h-[436px] relative max-w-full overflow-hidden shrink-0 object-cover hidden"
+            className="h-[487px] flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover mq1150:flex-1"
+            loading="lazy"
             alt=""
-            src="/adobestock-471485886-1-13@2x.png"
+            src="/photo-placeholder-61@2x.png"
           />
         </div>
       </div>
