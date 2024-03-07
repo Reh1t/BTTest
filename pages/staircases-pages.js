@@ -59,7 +59,7 @@ const StaircasesPages = () => {
             <b className="relative text-21xl inline-block max-w-full mq825:text-13xl mq450:text-5xl">
               Staircases by Design
             </b>
-            <div className="w-[544px] relative text-base whitespace-pre-wrap text-justify inline-block">
+            <div className="w-full relative text-base whitespace-pre-wrap text-justify inline-block">
               Collaborate with Building Tradition, where partnering with us
               means more than just innovative staircase solutions – it's a
               commitment to crafting your vision.
@@ -72,7 +72,7 @@ const StaircasesPages = () => {
             className="self-stretch flex-1 relative rounded-3xs max-w-full overflow-hidden max-h-full object-cover mq1425:self-stretch mq1425:w-auto"
             loading="lazy"
             alt=""
-            src="/adobestock-471485886-1-1@2x.png"
+            src="/Stairrcase.jpeg"
           />
         </div>
       </section>
@@ -116,7 +116,7 @@ innovation and sophistication in every step."
         <div className="flex flex-col items-start justify-start py-5 px-0 box-border gap-[19px_0px] min-w-[508px] max-w-full lg:flex-1 mq825:min-w-full">
           <div className="relative font-medium mq450:text-lgi">{`CUSTOMIZABLE OPTIONS `}</div>
           <b className="relative text-21xl inline-block max-w-full mq825:text-13xl mq450:text-5xl">{`Closed Riser Staircases `}</b>
-          <div className="w-[508px] relative text-base text-justify inline-block">
+          <div className="w-full relative text-base text-justify inline-block">
             Meticulously crafted, these designs seamlessly merge classic
             elegance with modern functionality. Enjoy enhanced stability and
             privacy with each step, while natural light adds warmth and allure
@@ -126,7 +126,7 @@ innovation and sophistication in every step."
           </div>
         </div>
         <img
-          className="h-[592px] flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover min-w-[422px] mq825:min-w-full"
+          className="h-[592px] flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover min-w-[600px] mq825:min-w-full"
           loading="lazy"
           alt=""
           src="/frame-25-1@2x.png"

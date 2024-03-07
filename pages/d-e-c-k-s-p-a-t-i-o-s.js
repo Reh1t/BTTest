@@ -17,40 +17,43 @@ const DECKSPATIOS = () => {
             src="/adobestock-565860496-1-11@2x.png"
           />
         </div>
-        <div className="flex-1 flex flex-col items-start justify-start p-5 box-border gap-[20px_0px] min-w-[450px] max-w-full mq750:min-w-full">
-          <div className="self-stretch flex flex-col items-start justify-start gap-[1px_0px]">
-            <h3 className="m-0 relative text-inherit font-bold font-inherit mq450:text-lgi">
-              Tailored Patio Solutions
-            </h3>
-            <div className="w-[652px] relative text-base inline-block">
-              From cozy corners to spacious entertaining areas, choose from a
-              variety of materials and finishes to suit your style.
-            </div>
-          </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[1px_0px] max-w-full">
-            <h3 className="m-0 relative text-inherit font-bold font-inherit inline-block max-w-full mq450:text-lgi">{`Quality Materials & Craftsmanship`}</h3>
-            <div className="w-[652px] relative text-base inline-block">
-              Using premium materials, our skilled craftsmen deliver exceptional
-              results that stand the test of time.
-            </div>
-          </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[1px_0px]">
-            <h3 className="m-0 relative text-inherit font-bold font-inherit mq450:text-lgi">
-              Built-In Features
-            </h3>
-            <div className="relative text-base">
-              Enhance functionality and beauty with custom seating, planters,
-              lighting, and much more.
-            </div>
-          </div>
-          <div className="self-stretch flex flex-col items-start justify-start gap-[1px_0px]">
-            <h3 className="m-0 relative text-inherit font-bold font-inherit mq450:text-lgi">{`Custom Features `}</h3>
-            <div className="w-[652px] relative text-base inline-block">
-              Elevate your patio with fire pits, outdoor kitchens, pergolas, and
-              more, creating an outdoor space as unique as you are.
-            </div>
-          </div>
-        </div>
+        <div className="flex-1 flex flex-col items-center justify-start p-5 box-border gap-y-5 min-w-[450px] max-w-full">
+  <div className="self-stretch flex flex-col items-start justify-start gap-y-5 w-full sm:w-[80%] lg:w-full">
+    <div>
+      <h3 className="m-0 font-bold text-lg sm:text-xl lg:text-2xl">
+        Tailored Patio Solutions
+      </h3>
+      <div className="text-base">
+        From cozy corners to spacious entertaining areas, choose from a variety of materials and finishes to suit your style.
+      </div>
+    </div>
+    <div>
+      <h3 className="m-0 font-bold text-lg sm:text-xl lg:text-2xl">
+        Quality Materials & Craftsmanship
+      </h3>
+      <div className="text-base">
+        Using premium materials, our skilled craftsmen deliver exceptional results that stand the test of time.
+      </div>
+    </div>
+    <div>
+      <h3 className="m-0 font-bold text-lg sm:text-xl lg:text-2xl">
+        Built-In Features
+      </h3>
+      <div className="text-base">
+        Enhance functionality and beauty with custom seating, planters, lighting, and much more.
+      </div>
+    </div>
+    <div>
+      <h3 className="m-0 font-bold text-lg sm:text-xl lg:text-2xl">
+        Custom Features
+      </h3>
+      <div className="text-base">
+        Elevate your patio with fire pits, outdoor kitchens, pergolas, and more, creating an outdoor space as unique as you are.
+      </div>
+    </div>
+  </div>
+</div>
+
       </section>
       <LetUsHelpYou />
       <Material />

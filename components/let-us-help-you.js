@@ -29,7 +29,7 @@ const LetUsHelpYou = () => {
               <h1 className="m-0 w-[629px] relative text-inherit font-bold font-inherit inline-block mq1050:text-13xl mq450:text-5xl">
                 Ready to transform your outdoor space?
               </h1>
-              <div className="w-[601px] relative text-base text-justify inline-block max-w-full">
+              <div className="w-[601px] lg:w-full relative text-base text-justify inline-block max-w-full">
                 Connect with us today to schedule a consultation with our team
                 and start planning your dream patio. Whether you're looking to
                 create a cozy retreat for quiet evenings at home or an expansive
