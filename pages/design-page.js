@@ -40,8 +40,8 @@ const DesignPage = () => {
 
   return (
     <div className="w-full relative bg-white flex flex-col items-center justify-start tracking-[normal]">
-<Navbar />
-      <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-start min-h-[731px] max-w-full">
+      <Navbar />
+      <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-between min-h-[731px] max-w-full">
         <header className="w-[1439px] overflow-hidden shrink-0 flex flex-col items-center justify-start p-5 box-border gap-[14px_0px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
           <h1 className="m-0 relative text-inherit font-bold font-inherit">
             Design
@@ -52,45 +52,45 @@ const DesignPage = () => {
             Phase of Your Project
           </div>
         </header>
-        <div className="h-auto w-full overflow-x-auto flex flex-wrap lg:flex-row items-start justify-start lg:justify-between py-8 px-4 lg:px-0 lg:pr-16 gap-4 lg:gap-8 max-w-full">
-  <Card
-    photoPlaceholder="/photo-placeholder1@2x.png"
-    conceptual="Conceptual "
-    modelling="Modelling"
-    aVirtualCanvasForYourDrea="A virtual canvas for your dreams. This step is to determine exactly what you want in your project."
-    onLearnMoreClick={onMainTextContainerClick}
-  />
-  <Card
-    photoPlaceholder="/photo-placeholder-11@2x.png"
-    conceptual="Construction "
-    modelling="Design"
-    aVirtualCanvasForYourDrea="Rooted in years of experience, this step is to decide how best to achieve your project goals, considering and analyzing constraints (i.e. budget, local environment, building codes, city/township laws etc.)"
-    modellingOverflow="hidden"
-    aVirtualCanvasPadding="0px 5px"
-    propHeight="unset"
-    onLearnMoreClick={onDesignText2Click}
-  />
-  <Card
-    photoPlaceholder="/photo-placeholder-21@2x.png"
-    conceptual="Construction"
-    modelling="Management"
-    aVirtualCanvasForYourDrea="Streamlining your project from start to finish with expert planning, efficient execution, and cost-effective solutions."
-    modellingOverflow="hidden"
-    aVirtualCanvasPadding="unset"
-    propHeight="115px"
-    onLearnMoreClick={onDesignText3Click}
-  />
-  <Card
-    photoPlaceholder="/photo-placeholder-31@2x.png"
-    conceptual="Accessible"
-    modelling="Construction "
-    aVirtualCanvasForYourDrea="We don't often think about making our spaces adaptable to life's transitions until it's too late. Why wait for the unexpected to happen when you could plan to be in a space that has lifetime adaptability, for whatever life transitions occur."
-    modellingOverflow="hidden"
-    aVirtualCanvasPadding="0px 14px 0px 5px"
-    propHeight="unset"
-    onLearnMoreClick={onDesignText4Click}
-  />
-</div>
+        <div className="h-auto w-full overflow-x-auto flex flex-wrap items-start justify-between py-8 px-4 lg:px-0 lg:pr-16 gap-4 lg:gap-8 max-w-full">
+          <Card
+            photoPlaceholder="/photo-placeholder1@2x.png"
+            conceptual="Conceptual "
+            modelling="Modelling"
+            aVirtualCanvasForYourDrea="A virtual canvas for your dreams. This step is to determine exactly what you want in your project."
+            onLearnMoreClick={onMainTextContainerClick}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-11@2x.png"
+            conceptual="Construction "
+            modelling="Design"
+            aVirtualCanvasForYourDrea="Rooted in years of experience, this step is to decide how best to achieve your project goals, considering and analyzing constraints (i.e. budget, local environment, building codes, city/township laws etc.)"
+            modellingOverflow="hidden"
+            aVirtualCanvasPadding="0px 5px"
+            propHeight="unset"
+            onLearnMoreClick={onDesignText2Click}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-21@2x.png"
+            conceptual="Construction"
+            modelling="Management"
+            aVirtualCanvasForYourDrea="Streamlining your project from start to finish with expert planning, efficient execution, and cost-effective solutions."
+            modellingOverflow="hidden"
+            aVirtualCanvasPadding="unset"
+            propHeight="115px"
+            onLearnMoreClick={onDesignText3Click}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-31@2x.png"
+            conceptual="Accessible"
+            modelling="Construction "
+            aVirtualCanvasForYourDrea="We don't often think about making our spaces adaptable to life's transitions until it's too late. Why wait for the unexpected to happen when you could plan to be in a space that has lifetime adaptability, for whatever life transitions occur."
+            modellingOverflow="hidden"
+            aVirtualCanvasPadding="0px 14px 0px 5px"
+            propHeight="unset"
+            onLearnMoreClick={onDesignText4Click}
+          />
+        </div>
 
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-start justify-start min-h-[526px] max-w-full text-center text-xl text-kuno-red font-footer-bold-text">
@@ -120,7 +120,7 @@ const DesignPage = () => {
           <h1
             className="m-0 relative text-21xl font-bold font-inherit shrink-0 cursor-pointer mq450:text-5xl mq1050:text-13xl"
             onClick={onDesignProjectTextClick}
-            >
+          >
             Design Project
           </h1>
           <div className="w-[528px] relative text-base text-justify inline-block shrink-0 max-w-full">
@@ -146,9 +146,9 @@ const DesignPage = () => {
           alt=""
           src="/photo1@2x.png"
           onClick={onPhotoImageClick}
-          />
+        />
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
