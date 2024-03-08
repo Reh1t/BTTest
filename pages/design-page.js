@@ -39,8 +39,9 @@ const DesignPage = () => {
   }, [router]);
 
   return (
-    <div className="w-full relative bg-white flex flex-col items-center justify-start tracking-[normal]">
+    <div>
       <Navbar />
+    <div className="w-full relative bg-white flex flex-col items-center justify-start tracking-[normal]">
       <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-between min-h-[731px] max-w-full">
         <header className="w-[1439px] overflow-hidden shrink-0 flex flex-col items-center justify-start p-5 box-border gap-[14px_0px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
           <h1 className="m-0 relative text-inherit font-bold font-inherit">
@@ -129,12 +130,12 @@ const DesignPage = () => {
             conceptual modelling. We also provide pre-finished, ready to
             assemble staircases for your next project.
           </div>
-          <div className="w-[528px] overflow-hidden flex flex-row flex-wrap items-start justify-center py-2.5 px-[110px] box-border min-w-[335px] max-w-full text-5xl text-sandybrown mq450:pl-5 mq450:pr-5 mq450:box-border">
+          <div className="w-[528px] overflow-hidden flex flex-row flex-wrap items-start justify-center py-2.5 px-[110px] box-border min-w-[335px] max-w-full text-sandybrown mq450:pl-5 mq450:pr-5 mq450:box-border">
             <div
               className="w-[167px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center py-1.5 px-[5px] cursor-pointer border-[2px] border-solid border-sandybrown"
               onClick={onButtonContainerClick}
             >
-              <h3 className="m-0 w-[152px] relative text-inherit font-bold font-inherit inline-block mq450:text-lgi">
+              <h3 className="m-0 relative text-inherit font-bold font-inherit inline-block mq450:text-lgi">
                 READ MORE
               </h3>
             </div>
@@ -149,6 +150,7 @@ const DesignPage = () => {
         />
       </section>
       <Footer />
+    </div>
     </div>
   );
 };
