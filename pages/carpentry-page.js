@@ -7,221 +7,134 @@ import Footer from "../components/footer";
 const CarpentryPage = () => {
   const router = useRouter();
 
+  const onDesignClick = useCallback(() => {
+    router.push("/design-page");
+  }, [router]);
+  const onAdditionRenovationsClick = useCallback(() => {
+    router.push("/addition-renovations");
+  }, [router]);
+  const onKitechesClick = useCallback(() => {
+    router.push("/kitchens");
+  }, [router]);
+  const onWashroomsClick = useCallback(() => {
+    router.push("/bathrooms");
+  }, [router]);
+  const onAccessibleConstructionClick = useCallback(() => {
+    router.push("/accessible-construction");
+  }, [router]);
+
+  const onTrimWorkClick = useCallback(() => {
+    router.push("/carpentry-page");
+  }, [router]);
+
+  const onDecksPatiosClick = useCallback(() => {
+    router.push("/d-e-c-k-s-p-a-t-i-o-s");
+  }, [router]);
+
   const onMainTextContainerClick = useCallback(() => {
     router.push("/conceptual-modelling-plannin1");
   }, [router]);
 
-  const onDesignText2Click = useCallback(() => {
-    router.push("/construction-design");
+  const onMoreClick = useCallback(() => {
+    router.push("/contact");
   }, [router]);
 
-  const onDesignText3Click = useCallback(() => {
-    router.push("/construction-management");
-  }, [router]);
-
-  const onDesignText4Click = useCallback(() => {
-    router.push("/accessible-construction");
-  }, [router]);
-
-  const onStaircasesByBuildingClick = useCallback(() => {
-    router.push("/staircases-pages");
-  }, [router]);
-
-  const onDesignProjectTextClick = useCallback(() => {
-    router.push("/construction-design");
-  }, [router]);
-
-  const onButtonContainerClick = useCallback(() => {
-    router.push("/construction-design");
-  }, [router]);
-
-  const onPhotoImageClick = useCallback(() => {
-    router.push("/staircases-pages");
-  }, [router]);
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start tracking-[normal] text-left text-21xl text-kuno-red font-footer-bold-text">
-<Navbar />
-<div className="w-full relative bg-white overflow-hidden overflow-x-auto shrink-0 max-w-full">
-  <header className="w-full overflow-hidden flex flex-col items-center justify-between p-5 box-border min-h-[152px] max-w-full text-left text-xl text-kuno-red font-footer-bold-text">
-    <h1 className="m-0 relative text-21xl font-bold font-inherit">
-      Carpentry
-    </h1>
-    <div className="relative font-medium whitespace-nowrap">
-      by Building Tradition
-    </div>
-    <div className="w-full max-w-[791px] relative font-medium inline-block shrink-0">
-      Crafting Success from the Ground Up: Offering Comprehensive
-      Modelling, Planning, Construction Design and Management for Every
-      Phase of Your Project
-    </div>
-  </header>
-  
-  <div className="h-auto w-full overflow-x-auto flex flex-wrap items-start justify-between py-8 px-4 lg:px-0 lg:pr-16 gap-4 lg:gap-8 max-w-full">
+      <Navbar />
+      <div className="w-full relative bg-white overflow-hidden overflow-x-auto shrink-0 max-w-full">
+        <header className="w-full overflow-hidden flex flex-col items-center justify-between p-5 box-border min-h-[152px] max-w-full text-left text-xl text-kuno-red font-footer-bold-text">
+          <h1 className="m-0 relative text-21xl font-bold font-inherit">
+            Carpentry
+          </h1>
+          <div className="relative font-medium whitespace-nowrap">
+            by Building Tradition
+          </div>
+          <div className="w-full max-w-[791px] relative font-medium inline-block shrink-0">
+            Crafting Success from the Ground Up: Offering Comprehensive
+            Modelling, Planning, Construction Design and Management for Every
+            Phase of Your Project
+          </div>
+        </header>
+
+        <div className="h-auto w-full overflow-hidden overflow-y-auto flex flex-wrap items-start justify-center py-8 md:px-0 md:pr-8 lg:pr-16 gap-4 md:gap-6 lg:gap-8 max-w-full">
           <Card
-            photoPlaceholder="/photo-placeholder1@2x.png"
-            conceptual="Conceptual "
-            modelling="Modelling"
-            aVirtualCanvasForYourDrea="A virtual canvas for your dreams. This step is to determine exactly what you want in your project."
-            onLearnMoreClick={onMainTextContainerClick}
-          />
-          <Card
-            photoPlaceholder="/photo-placeholder-11@2x.png"
-            conceptual="Construction "
-            modelling="Design"
-            aVirtualCanvasForYourDrea="Rooted in years of experience, this step is to decide how best to achieve your project goals, considering and analyzing constraints (i.e. budget, local environment, building codes, city/township laws etc.)"
-            modellingOverflow="hidden"
-            aVirtualCanvasPadding="0px 5px"
-            propHeight="unset"
-            onLearnMoreClick={onDesignText2Click}
-          />
-          <Card
-            photoPlaceholder="/photo-placeholder-21@2x.png"
-            conceptual="Construction"
-            modelling="Management"
-            aVirtualCanvasForYourDrea="Streamlining your project from start to finish with expert planning, efficient execution, and cost-effective solutions."
-            modellingOverflow="hidden"
-            aVirtualCanvasPadding="unset"
-            propHeight="115px"
-            onLearnMoreClick={onDesignText3Click}
-          />
-          <Card
-            photoPlaceholder="/photo-placeholder-31@2x.png"
-            conceptual="Accessible"
-            modelling="Construction "
-            aVirtualCanvasForYourDrea="We don't often think about making our spaces adaptable to life's transitions until it's too late. Why wait for the unexpected to happen when you could plan to be in a space that has lifetime adaptability, for whatever life transitions occur."
+            photoPlaceholder="/photo-placeholder2@2x.png"
+            conceptual="Design"
+            modelling=""
+            aVirtualCanvasForYourDrea="Crafting your dream home from concept to completion with expert precision and attention to detail."
             modellingOverflow="hidden"
             aVirtualCanvasPadding="0px 14px 0px 5px"
             propHeight="unset"
-            onLearnMoreClick={onDesignText4Click}
-          />
-        <Card
-            photoPlaceholder="/photo-placeholder1@2x.png"
-            conceptual="Conceptual "
-            modelling="Modelling"
-            aVirtualCanvasForYourDrea="A virtual canvas for your dreams. This step is to determine exactly what you want in your project."
-            onLearnMoreClick={onMainTextContainerClick}
+            onLearnMoreClick={onDesignClick}
           />
           <Card
-            photoPlaceholder="/photo-placeholder-11@2x.png"
-            conceptual="Construction "
-            modelling="Design"
-            aVirtualCanvasForYourDrea="Rooted in years of experience, this step is to decide how best to achieve your project goals, considering and analyzing constraints (i.e. budget, local environment, building codes, city/township laws etc.)"
+            photoPlaceholder="/photo-placeholder-12@2x.png"
+            conceptual="Additions "
+            modelling="& Renovations"
+            aVirtualCanvasForYourDrea="Expand your living space seamlessly with custom-built additions tailored to your unique needs."
+            onLearnMoreClick={onAdditionRenovationsClick}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-22@2x.png"
+            conceptual="Kitchens "
+            modelling=""
+            aVirtualCanvasForYourDrea="Elevating the heart of your home with bespoke kitchen designs that blend functionality and style."
             modellingOverflow="hidden"
             aVirtualCanvasPadding="0px 5px"
             propHeight="unset"
-            onLearnMoreClick={onDesignText2Click}
+            onLearnMoreClick={onKitechesClick}
           />
           <Card
-            photoPlaceholder="/photo-placeholder-21@2x.png"
-            conceptual="Construction"
-            modelling="Management"
-            aVirtualCanvasForYourDrea="Streamlining your project from start to finish with expert planning, efficient execution, and cost-effective solutions."
+            photoPlaceholder="/photo-placeholder-32@2x.png"
+            conceptual="Washrooms"
+            modelling=""
+            aVirtualCanvasForYourDrea="Transforming your bathrooms into luxurious retreats with personalized designs and accessible features."
             modellingOverflow="hidden"
             aVirtualCanvasPadding="unset"
             propHeight="115px"
-            onLearnMoreClick={onDesignText3Click}
+            onLearnMoreClick={onWashroomsClick}
           />
           <Card
-            photoPlaceholder="/photo-placeholder-31@2x.png"
-            conceptual="Accessible"
-            modelling="Construction "
-            aVirtualCanvasForYourDrea="We don't often think about making our spaces adaptable to life's transitions until it's too late. Why wait for the unexpected to happen when you could plan to be in a space that has lifetime adaptability, for whatever life transitions occur."
+            photoPlaceholder="/photo-placeholder-41@2x.png"
+            conceptual="Accessible "
+            modelling="Construction"
+            aVirtualCanvasForYourDrea="Creating safe and inclusive living environments with expertly crafted accessibility solutions."
+            onLearnMoreClick={onAccessibleConstructionClick}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-51@2x.png"
+            conceptual="Trim "
+            modelling="Work"
+            aVirtualCanvasForYourDrea="Adding the perfect finishing touches to your space with exquisite trim and molding installations."
+            modellingOverflow="hidden"
+            aVirtualCanvasPadding="0px 5px"
+            propHeight="unset"
+            onLearnMoreClick={onTrimWorkClick}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-61@2x.png"
+            conceptual="Decks & Patios"
+            modelling=""
+            aVirtualCanvasForYourDrea="Enhancing your outdoor living experience with beautifully designed and expertly constructed decks and patios."
+            modellingOverflow="hidden"
+            aVirtualCanvasPadding="unset"
+            propHeight="115px"
+            onLearnMoreClick={onDecksPatiosClick}
+          />
+          <Card
+            photoPlaceholder="/photo-placeholder-7@2x.png"
+            conceptual=""
+            modelling="& Much More! "
+            aVirtualCanvasForYourDrea="Ask us about how we can help your with your unique project needs!"
             modellingOverflow="hidden"
             aVirtualCanvasPadding="0px 14px 0px 5px"
             propHeight="unset"
-            onLearnMoreClick={onDesignText4Click}
+            onLearnMoreClick={onMoreClick}
           />
         </div>
-        {/* <div className="h-auto w-full overflow-x-auto flex flex-wrap items-start justify-between py-8 px-4 lg:px-0 lg:pr-16 gap-4 lg:gap-8 max-w-full">
-        <Card1
-          photoPlaceholder="/photo-placeholder2@2x.png"
-          design="Design"
-          aVirtualCanvasForYourDrea="Crafting your dream home from concept to completion with expert precision and attention to detail"
-          />
-        <Card1
-          photoPlaceholder="/photo-placeholder-12@2x.png"
-          design={`Additions & Renovations`}
-          aVirtualCanvasForYourDrea="Expand your living space seamlessly with custom-built additions tailored to your unique needs"
-          buttonFrameLeft="396px"
-          buttonFrameTop="193px"
-          lEARNMOREAlignSelf="unset"
-          lEARNMOREPadding="0px 14px 0px 5px"
-          propFlex="unset"
-          />
-        <Card1
-          photoPlaceholder="/photo-placeholder-22@2x.png"
-          design="Kitchens "
-          aVirtualCanvasForYourDrea="Elevating the heart of your home with bespoke kitchen designs that blend functionality and style."
-          buttonFrameLeft="738px"
-          buttonFrameTop="193px"
-          lEARNMOREAlignSelf="stretch"
-          lEARNMOREPadding="0px 19px 0px 0px"
-          propFlex="1"
-          />
-        <Card1
-          photoPlaceholder="/photo-placeholder-32@2x.png"
-          design="Washrooms"
-          aVirtualCanvasForYourDrea="Transforming your bathrooms into luxurious retreats with personalized designs and accessible features."
-          buttonFrameLeft="1080px"
-          buttonFrameTop="193px"
-          lEARNMOREAlignSelf="stretch"
-          lEARNMOREPadding="0px 14px 0px 5px"
-          propFlex="1"
-          />
-          </div>
-        <Card1
-          photoPlaceholder="/photo-placeholder-41@2x.png"
-          design="Accessible Construction"
-          aVirtualCanvasForYourDrea="Creating safe and inclusive living environments with expertly crafted accessibility solutions."
-          buttonFrameLeft="54px"
-          buttonFrameTop="778px"
-          lEARNMOREAlignSelf="stretch"
-          lEARNMOREPadding="0px 14px 0px 5px"
-          propFlex="1"
-        />
-        <Card1
-          photoPlaceholder="/photo-placeholder-51@2x.png"
-          design="Trim Work"
-          aVirtualCanvasForYourDrea="Adding the perfect finishing touches to your space with exquisite trim and molding installations."
-          buttonFrameLeft="396px"
-          buttonFrameTop="778px"
-          lEARNMOREAlignSelf="stretch"
-          lEARNMOREPadding="0px 14px 0px 5px"
-          propFlex="1"
-        />
-        <Card1
-          photoPlaceholder="/photo-placeholder-61@2x.png"
-          design={`Decks & Patios`}
-          aVirtualCanvasForYourDrea="Enhancing your outdoor living experience with beautifully designed and expertly constructed decks and patios."
-          buttonFrameLeft="738px"
-          buttonFrameTop="778px"
-          lEARNMOREAlignSelf="stretch"
-          lEARNMOREPadding="0px 19px 0px 0px"
-          propFlex="1"
-        />
-        <div className="absolute top-[778px] left-[1080px] rounded-3xs bg-kuno-greywhite w-[305px] h-[503px] overflow-hidden flex flex-col items-center justify-start gap-[3px_0px]">
-          <div className="self-stretch h-[285px] relative shrink-0 flex items-center justify-center">
-            <img
-              className="self-stretch h-full max-w-full overflow-hidden shrink-0 object-contain absolute left-[0px] top-[0px] w-full [transform:scale(1.07)]"
-              alt=""
-              src="/photo-placeholder-7@2x.png"
-            />
-          </div>
-          <div className="self-stretch flex flex-row items-start justify-start py-0 pr-3.5 pl-[5px]">
-            <h1 className="m-0 flex-1 relative text-inherit font-bold font-inherit mq450:text-5xl mq925:text-13xl">{`& Much More!`}</h1>
-          </div>
-          <div className="self-stretch flex flex-row items-start justify-center py-0 px-[5px] text-justify text-base">
-            <div className="h-[115px] w-[285px] relative inline-block shrink-0">{`Ask us about how we can help your with your unique project needs! `}</div>
-          </div>
-          <div className="self-stretch overflow-hidden hidden flex-col items-center justify-start py-[7px] px-5 text-xs text-sandybrown">
-            <div className="w-[99px] rounded-mini box-border flex flex-row items-center justify-between py-1.5 px-0 gap-[10px] border-[2px] border-solid border-sandybrown">
-              <div className="h-3.5 relative inline-block whitespace-nowrap">
-                LEARN MORE
-              </div>
-            </div>
-          </div>
-        </div> */}
+
       </div>
       <section className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-center gap-[5px_0px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
         <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-[41px] px-5 box-border gap-[28px_0px] max-w-full">
@@ -278,7 +191,7 @@ const CarpentryPage = () => {
               loading="lazy"
               alt=""
               src="/shoemoulding-1@2x.png"
-              />
+            />
           </div>
         </div>
         <div className="self-stretch overflow-hidden flex flex-col items-start justify-start gap-[30px_0px] max-w-full text-justify">
@@ -311,7 +224,7 @@ const CarpentryPage = () => {
           </footer>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
