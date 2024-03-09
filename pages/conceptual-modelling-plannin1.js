@@ -13,47 +13,40 @@ const ConceptualModellingPlannin1 = () => {
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
 <Navbar />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-5 px-0 box-border max-w-full [row-gap:20px] text-left text-5xl text-kuno-red font-footer-bold-text">
-        <div className="flex-1 flex flex-col items-start justify-start py-0 pr-10 pl-0 box-border gap-[16px_0px] min-w-[462px] max-w-full mq750:min-w-full">
-          <h3 className="m-0 relative text-inherit font-normal font-inherit mq450:text-lgi">
-            Design
-          </h3>
-          <h1 className="m-0 w-[637px] relative text-21xl font-bold font-inherit inline-block max-w-full mq750:text-13xl mq450:text-5xl">
-            <p className="m-0">Conceptual Modelling</p>
-            <p className="m-0">{` &Planning`}</p>
-          </h1>
-          <div className="w-[623px] relative text-base text-justify inline-block max-w-full">
-            Embark on your renovation or new build project with confidence by
-            leveraging Building Tradition's Conceptual Model Plan Package. Our
-            service offers a comprehensive approach to project planning,
-            combining expertise, personalized consultations, and detailed model
-            plans to bring your vision to life. From initial consultation to
-            final draft plans, we prioritize your needs and ensure a
-            collaborative environment to refine ideas and make informed
-            decisions. With our support, you'll save time, money, and resources,
-            ultimately achieving a streamlined and perfect planning stage for
-            your dream project.
-          </div>
-          <h3
-            className="m-0 w-[623px] relative text-inherit text-orangered text-justify inline-block max-w-full cursor-pointer font-inherit mq450:text-lgi"
-            onClick={onTheConceptualModelClick}
-            >
-            <p className="m-0">
-              <span className="font-footer-bold-text">{`The `}</span>
-              <b className="font-footer-bold-text">Conceptual Model Plan</b>
-              <span></span>
-            </p>
-            <p className="m-0">
-              by Building Tradition is the solution you need! Is The Solution
-              You Need!
-            </p>
-          </h3>
-        </div>
+      <div className="flex-1 flex flex-col items-start justify-start py-0 pl-5 pr-5 box-border gap-[16px_0px] min-w-[462px] max-w-full mq750:min-w-full">
+  <h3 className="m-0 relative text-inherit font-normal font-inherit mq450:text-lgi">
+    Design
+  </h3>
+  <h1 className="m-0 w-full md:w-[637px] relative text-21xl font-bold font-inherit inline-block max-w-full mq750:text-13xl mq450:text-5xl">
+    <p className="m-0">Conceptual Modelling</p>
+    <p className="m-0">{` & Planning`}</p>
+  </h1>
+  <div className="w-full md:w-[623px] relative text-base text-justify max-w-full">
+    Embark on your renovation or new build project with confidence by leveraging Building Tradition's Conceptual Model Plan Package. Our service offers a comprehensive approach to project planning, combining expertise, personalized consultations, and detailed model plans to bring your vision to life. From initial consultation to final draft plans, we prioritize your needs and ensure a collaborative environment to refine ideas and make informed decisions. With our support, you'll save time, money, and resources, ultimately achieving a streamlined and perfect planning stage for your dream project.
+  </div>
+
+  <h3
+    className="m-0 w-full md:w-[623px] relative text-inherit text-orangered text-justify inline-block max-w-full cursor-pointer font-inherit mq450:text-lgi"
+    onClick={onTheConceptualModelClick}
+  >
+    <p className="m-0">
+      <span className="font-footer-bold-text">{`The `}</span>
+      <b className="font-footer-bold-text">Conceptual Model Plan</b>
+      <span></span>
+    </p>
+    <p className="m-0">
+      by Building Tradition is the solution you need! Is The Solution
+      You Need!
+    </p>
+  </h3>
+</div>
+
         <div className="flex-1 overflow-hidden flex flex-col items-start justify-start py-0 px-5 box-border min-w-[468px] max-w-full mq750:min-w-full">
           <img
             className="self-stretch h-[590.6px] relative rounded-xl max-w-full overflow-hidden shrink-0 object-cover"
             loading="lazy"
             alt=""
-            src="/adobestock-471485886-1-111@2x.png"
+            src="/photo-placeholder1@2x.png"
             />
         </div>
       </section>
@@ -69,7 +62,7 @@ const ConceptualModellingPlannin1 = () => {
           <img
             className="self-stretch flex-1 relative rounded-3xs max-w-full overflow-hidden max-h-full object-cover lg:self-stretch lg:w-auto"
             alt=""
-            src="/design-conceptual-11@2x.png"
+            src="/design-conceptual-1@2x.png"
           />
           <img
             className="w-[310px] h-[245px] absolute !m-[0] top-[calc(50%_-_122.5px)] left-[calc(50%_-_154.5px)] z-[1]"
@@ -118,7 +111,7 @@ Expert Guidance`}</li>
           </div>
           <div className="w-[645px] h-[366.6px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-0 px-[78px] box-border max-w-full mq750:pl-[39px] mq750:pr-[39px] mq750:box-border">
             <img
-              className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-cover"
+              className="self-stretch flex-1 relative max-w-full overflow-hidden max-h-full object-contain"
               loading="lazy"
               alt=""
               src="/modelplanspage2-1@2x.png"

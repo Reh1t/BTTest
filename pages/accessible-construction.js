@@ -26,35 +26,20 @@ const AccessibleConstruction = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-14 px-0 pb-0 box-border gap-[28px_0px] tracking-[normal]">
-<Navbar />
+      <Navbar />
       <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-7 pr-[23px] pl-[49px] box-border max-w-full mq750:pl-6 mq750:box-border">
         <header className="flex-1 flex flex-row items-start justify-start gap-[0px_37px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq750:gap-[0px_37px]">
           <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
-            <h1 className="m-0 w-[637px] relative text-inherit font-bold font-inherit inline-block whitespace-nowrap max-w-full">{`Accessible Construction `}</h1>
+            <h1 className="m-0 w-full md:w-[637px] relative text-21xl font-bold font-inherit inline-block max-w-full">{`Accessible Construction`}</h1>
             <div className="w-[544px] relative text-xl font-medium inline-block whitespace-nowrap max-w-full">
               by Building Tradition
             </div>
             <div className="flex flex-col items-center justify-start gap-[28px_0px] text-justify text-base">
-              <div className="w-[651px] relative inline-block">
-                Building Tradition offers homes designed to grow alongside you
-                and your family, seamlessly adapting to life's transitions. Our
-                Custom Home Additions are designed for lifelong comfort,
-                accessibility, and independence. Our expert team collaborates
-                with clients to create tailored solutions that evolve with their
-                needs, whether accommodating growing families, aging relatives,
-                or individuals with mobility challenges. From seamless
-                integration of accessibility features to prioritizing ease of
-                maintenance and cleanliness, our custom home additions are
-                crafted to enhance quality of life for years to come.
-                Additionally, eligible renovations may qualify for the Home
-                Accessibility Tax Credit (HATC), providing potential savings of
-                up to $10,000 for seniors or individuals with disabilities.
-                Partner with us to redefine your living space and enjoy the
-                peace of mind that comes from living in a home that adapts to
-                you.
+              <div className="w-[100%] max-w-[651px] relative inline-block text-base md:text-lg lg:text-xl">
+                Building Tradition offers homes designed to grow alongside you and your family, seamlessly adapting to life's transitions. Our Custom Home Additions are designed for lifelong comfort, accessibility, and independence. Our expert team collaborates with clients to create tailored solutions that evolve with their needs, whether accommodating growing families, aging relatives, or individuals with mobility challenges. From seamless integration of accessibility features to prioritizing ease of maintenance and cleanliness, our custom home additions are crafted to enhance quality of life for years to come. Additionally, eligible renovations may qualify for the Home Accessibility Tax Credit (HATC), providing potential savings of up to $10,000 for seniors or individuals with disabilities. Partner with us to redefine your living space and enjoy the peace of mind that comes from living in a home that adapts to you.
               </div>
-              <button
-                className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+
+              <button className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
                 onClick={onButtonClick}
               >
                 <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
@@ -63,13 +48,12 @@ const AccessibleConstruction = () => {
               </button>
             </div>
           </div>
-          <div className="h-[365px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start bg-[url('/adobestock-471485886-1-16@2x.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
-            <img
-              className="self-stretch h-[365px] relative rounded-3xs max-w-full overflow-hidden shrink-0 object-cover hidden"
-              alt=""
-              src="/adobestock-471485886-1-16@2x.png"
-              />
+          <div className="h-[365px] md:w-[50%] lg:w-[40%] flex-1 rounded-3xs overflow-hidden flex flex-col items-center justify-center max-w-full">
+            <div className="h-full w-full bg-cover bg-no-repeat bg-center rounded-3xs" style={{ backgroundImage: "url('/photo-placeholder-31@2x.png')" }}>
+            </div>
           </div>
+
+
         </header>
       </section>
       <section
@@ -162,14 +146,14 @@ const AccessibleConstruction = () => {
             <button
               className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
               onClick={onButton1Click}
-              >
+            >
               <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
                 LEARN MORE
               </div>
             </button>
           </div>
         </div>
-        <div className="h-[468px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start bg-[url('/adobestock-471485886-1-17@2x.png')] bg-cover bg-no-repeat bg-[top] min-w-[442px] max-w-full mq750:min-w-full">
+        <div className="h-[468px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start bg-[url('/adobestock-542185006-1-1-1@2x.png')] bg-cover bg-no-repeat bg-[top] min-w-[442px] max-w-full mq750:min-w-full">
           <img
             className="self-stretch h-[468px] relative rounded-3xs max-w-full overflow-hidden shrink-0 object-cover hidden"
             alt=""
@@ -185,11 +169,11 @@ const AccessibleConstruction = () => {
             </h1>
           </div>
           <div className="self-stretch flex flex-row items-center justify-center pt-0 px-0 pb-[47px] box-border gap-[0px_44px] max-w-full text-xl mq1050:flex-wrap mq750:gap-[0px_44px] mq750:pb-[31px] mq750:box-border">
-            <div className="h-[424px] w-[488px] rounded-3xs overflow-hidden shrink-0 flex flex-col items-start justify-start bg-[url('/adobestock-471485886-1-18@2x.png')] bg-cover bg-no-repeat bg-[top] min-w-[488px] max-w-full mq1050:flex-1 mq750:min-w-full">
+            <div className="h-[424px] w-[488px] rounded-3xs overflow-hidden shrink-0 flex flex-col items-start justify-start bg-[url('/AdobeStock_296427422.jpeg')] bg-cover bg-no-repeat bg-[top] min-w-[488px] max-w-full mq1050:flex-1 mq750:min-w-full">
               <img
                 className="self-stretch h-[424px] relative rounded-3xs max-w-full overflow-hidden shrink-0 object-cover hidden"
                 alt=""
-                src="/adobestock-471485886-1-18@2x.png"
+                src="/AdobeStock_296427422.jpeg"
               />
             </div>
             <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-[13px] box-border min-w-[414px] max-w-full mq750:min-w-full">
@@ -243,7 +227,7 @@ const AccessibleConstruction = () => {
           </div>
         </button>
       </footer>
-<Footer/>
+      <Footer />
     </div>
   );
 };
