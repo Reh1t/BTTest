@@ -25,10 +25,10 @@ const AccessibleConstruction = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-14 px-0 pb-0 box-border gap-[28px_0px] tracking-[normal]">
+    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-14 px-0 pb-0 box-border tracking-[normal]">
       <Navbar />
       <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-7 pr-[23px] pl-[49px] box-border max-w-full mq750:pl-6 mq750:box-border">
-        <header className="flex-1 flex flex-row items-start justify-start gap-[0px_37px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq750:gap-[0px_37px]">
+        <header className="flex-1 flex flex-row flex-wrap items-start justify-start gap-[0px_37px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq750:gap-[0px_37px]">
           <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
             <h1 className="m-0 w-full md:w-[637px] relative text-21xl font-bold font-inherit inline-block max-w-full">{`Accessible Construction`}</h1>
             <div className="w-[544px] relative text-xl font-medium inline-block whitespace-nowrap max-w-full">
@@ -48,10 +48,14 @@ const AccessibleConstruction = () => {
               </button>
             </div>
           </div>
-          <div className="h-[365px] md:w-[50%] lg:w-[40%] flex-1 rounded-3xs overflow-hidden flex flex-col items-center justify-center max-w-full">
-            <div className="h-full w-full bg-cover bg-no-repeat bg-center rounded-3xs" style={{ backgroundImage: "url('/photo-placeholder-31@2x.png')" }}>
-            </div>
-          </div>
+          <div className="h-[468px] flex-1 rounded-3xs overflow-hidden flex flex-col items-start justify-start min-w-[442px] max-w-full mq750:min-w-full">
+  <img
+    className="self-stretch h-[468px] w-full relative rounded-3xs max-w-full overflow-hidden object-cover"
+    alt=""
+    src="/photo-placeholder-31@2x.png"
+  />
+</div>
+
 
 
         </header>
@@ -73,16 +77,16 @@ const AccessibleConstruction = () => {
           />
         </div>
       </section>
-      <section className="flex flex-row items-start justify-center py-0 px-5 box-border gap-[0px_18px] max-w-full text-justify text-base text-kuno-red font-footer-bold-text mq1225:flex-wrap">
+      <section className="flex flex-row items-start justify-start py-0 px-5 box-border gap-[0px_18px] max-w-full text-justify text-base text-kuno-red font-footer-bold-text mq1225:flex-wrap">
         <div className="flex flex-col items-start justify-start gap-[22px_0px] max-w-full">
           <h3 className="m-0 w-[402px] relative text-5xl font-bold font-inherit text-left inline-block mq450:text-lgi">
             Lifelong Comfort and Independence
           </h3>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Design a home addition that prioritizes comfort, accessibility,
             and independence for lifelong enjoyment
           </div>
-          <div className="w-[346px] h-[72px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             <p className="m-0">
               – Ensure your living space evolves with your changing needs and
               accommodates growing families, aging relatives, or mobility
@@ -94,15 +98,15 @@ const AccessibleConstruction = () => {
           <h3 className="m-0 w-[402px] relative text-5xl font-bold font-inherit text-left inline-block mq450:text-lgi">
             Tailored Solutions for Every Stage of Life
           </h3>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Seamlessly integrate accessibility features into your home
             addition to promote independence and ease of movement.
           </div>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Prioritize ease of maintenance and cleanliness to enhance quality
             of life for occupants of all ages and abilities.
           </div>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Seamless incorporation of universal design principles to promote
             inclusivity and functionality
           </div>
@@ -112,15 +116,15 @@ const AccessibleConstruction = () => {
             <p className="m-0">Tailored Accessibility:</p>
             <p className="m-0">{`Washrooms for Comfort and Inclusivity `}</p>
           </h3>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Personalized design approach to ensure washrooms meet individual
             accessibility needs
           </div>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Integration of grab bars, roll-in showers, and adjustable fixtures
             for ease of use
           </div>
-          <div className="w-[346px] relative inline-block max-w-full">
+          <div className="relative inline-block w-full">
             – Collaboration with clients to create a space that prioritizes
             comfort, safety, and independence
           </div>
@@ -136,7 +140,7 @@ const AccessibleConstruction = () => {
               <h1 className="m-0 w-[637px] relative text-inherit font-bold font-inherit inline-block max-w-full mq750:text-13xl mq450:text-5xl">
                 Age in Place: Homes Crafted for Lifelong Comfort and Well-Being
               </h1>
-              <div className="w-[651px] relative text-base text-justify inline-block">
+              <div className="relative text-base text-justify inline-block">
                 Ensure your next build goes smoothly by using our extensive
                 experience with staircase design, which is an integral part of
                 our conceptual modelling. We also provide pre-finished, ready to
@@ -179,11 +183,11 @@ const AccessibleConstruction = () => {
             <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-[13px] box-border min-w-[414px] max-w-full mq750:min-w-full">
               <div className="self-stretch flex flex-col items-center justify-start gap-[32px_0px] mq750:gap-[32px_0px]">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[20px_0px]">
-                  <div className="w-[637px] relative font-medium inline-block mq450:text-base">
+                  <div className="relative font-medium inline-block mq450:text-base">
                     Explore potential savings with the Home Accessibility Tax
                     Credit (HATC) for eligible renovations.
                   </div>
-                  <div className="w-[637px] relative font-medium inline-block mq450:text-base">
+                  <div className="relative font-medium inline-block mq450:text-base">
                     Seniors or individuals with disabilities may qualify for up
                     to $10,000 in expenses claimed for renovations that enhance
                     accessibility and safety.
