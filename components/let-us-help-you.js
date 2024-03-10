@@ -26,7 +26,7 @@ const LetUsHelpYou = () => {
               PATIOS: YOUR OUTDOOR HAVEN
             </div>
             <div className="flex flex-col items-start justify-start pt-0 px-0 pb-3 box-border gap-[16px_0px] max-w-full text-21xl">
-              <h1 className="m-0 w-[629px] relative text-inherit font-bold font-inherit inline-block mq1050:text-13xl mq450:text-5xl">
+              <h1 className="m-0 relative text-inherit font-bold font-inherit inline-block mq1050:text-13xl mq450:text-5xl">
                 Ready to transform your outdoor space?
               </h1>
               <div className="w-[601px] lg:w-full relative text-base text-justify inline-block max-w-full">

@@ -21,7 +21,7 @@ const DesignProjectStaircase = () => {
           <b className="relative text-5xl mq450:text-lgi">
             by Building Tradition
           </b>
-          <div className="w-[622px] relative text-base text-justify inline-block">
+          <div className="relative text-base text-justify inline-block">
             At Building Tradition, we understand that the kitchen is the heart
             of the home, where cherished memories are made and culinary
             creations come to life. Our team of skilled craftsmen and designers
@@ -45,13 +45,16 @@ const DesignProjectStaircase = () => {
           </button>
         </div>
       </div>
-      <div className="h-[436px] w-[654px] rounded-3xs overflow-hidden shrink-0 flex flex-row flex-wrap items-start justify-start bg-[url('/adobestock-471485886-1-14@2x.png')] bg-cover bg-no-repeat bg-[top] max-w-full">
-        <img
-          className="w-[654px] relative max-h-full object-cover hidden max-w-full"
-          alt=""
-          src="/adobestock-471485886-1-14@2x.png"
-        />
+      <div className="h-[436px] w-[654px] rounded-3xs overflow-hidden flex items-center justify-center">
+        <div className="w-full h-full bg-[url('/AdobeStock_79176676.jpeg')] bg-cover bg-no-repeat bg-center">
+          <img
+            className="w-full h-full object-cover"
+            alt=""
+            src="/AdobeStock_79176676.jpeg"
+          />
+        </div>
       </div>
+
     </section>
   );
 };

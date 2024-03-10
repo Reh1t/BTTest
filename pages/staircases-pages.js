@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import OpenRiserStaircases from "../components/open-riser-staircases";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import StairCaseHeroSection from "../components/staircaseHerosection";
 const StaircasesPages = () => {
   const router = useRouter();
 
@@ -16,37 +17,8 @@ const StaircasesPages = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
-<Navbar />
-      <section className="self-stretch bg-white overflow-hidden flex flex-col items-start justify-start text-left text-45xl text-white font-footer-bold-text">
-        <div className="self-stretch overflow-hidden flex flex-col items-start justify-start relative gap-[10px_0px]">
-          <div className="self-stretch flex flex-col items-start justify-start">
-            <img
-              className="self-stretch relative max-w-full overflow-hidden max-h-full object-cover"
-              alt=""
-              src="/adobestock-646941552-4-1-1@2x.png"
-              />
-          </div>
-          <h2 className="!m-[0] absolute top-[256px] left-[calc(50%_-_502px)] text-inherit font-bold font-inherit [text-shadow:0px_4px_10px_rgba(0,_0,_0,_0.65)] z-[1] mq825:text-32xl mq450:text-19xl">
-            <p className="m-0">Custom</p>
-            <p className="m-0">Staircases</p>
-          </h2>
-          <b className="w-[199px] absolute !m-[0] top-[85px] left-[calc(50%_-_502px)] text-5xl inline-block [text-shadow:0px_4px_10px_rgba(0,_0,_0,_0.65)] z-[1] mq450:text-lgi">
-            UNIQUE SERVICE
-          </b>
-          <img
-            className="w-2 h-32 absolute !m-[0] top-[266px] left-[200px] z-[1]"
-            loading="lazy"
-            alt=""
-            src="/vectical-line.svg"
-            />
-          <img
-            className="w-32 h-0 absolute !m-[0] top-[99px] left-[76px] object-contain z-[1]"
-            loading="lazy"
-            alt=""
-            src="/horizontal-line.svg"
-          />
-        </div>
-      </section>
+      <Navbar />
+      <StairCaseHeroSection/>
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-14 px-[49px] box-border gap-[0px_36px] max-w-full text-left text-xl text-kuno-red font-footer-bold-text mq825:gap-[0px_36px] mq825:pt-9 mq825:pb-9 mq825:box-border mq1425:flex-wrap mq1425:pl-6 mq1425:pr-6 mq1425:box-border">
         <div className="w-[572px] overflow-hidden shrink-0 flex flex-col items-start justify-center py-3 px-3.5 box-border gap-[140px_0px] min-w-[572px] max-w-full mq825:gap-[140px_0px] mq825:min-w-full mq450:gap-[140px_0px] mq1425:flex-1">
           <div
@@ -130,7 +102,7 @@ innovation and sophistication in every step."
           loading="lazy"
           alt=""
           src="/frame-25-1@2x.png"
-          />
+        />
       </section>
       <OpenRiserStaircases
         frame25="/frame-25-2@2x.png"
@@ -167,7 +139,7 @@ innovation and sophistication in every step."
             loading="lazy"
             alt=""
             src="/frame-31@2x.png"
-            />
+          />
         </div>
       </section>
       <footer className="self-stretch bg-sandybrown overflow-hidden flex flex-col items-center justify-center py-[38px] px-5 box-border max-w-full text-left text-45xl text-white font-footer-bold-text">
@@ -179,7 +151,7 @@ innovation and sophistication in every step."
           <p className="m-0">are you ready to create one together ?</p>
         </h2>
       </footer>
-<Footer/>
+      <Footer />
     </div>
   );
 };

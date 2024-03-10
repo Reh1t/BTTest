@@ -12,7 +12,7 @@ const RightBox = () => {
             </div>
           </div>
         </div>
-        <div className="w-[420px] overflow-hidden shrink-0 flex flex-col items-center justify-start gap-[18px_0px] max-w-full">
+        <div className="w-[418px] overflow-hidden shrink-0 flex flex-col items-center justify-start gap-[18px_0px] max-w-full">
           <h2 className="m-0 w-[402px] relative text-inherit font-bold font-inherit inline-block max-w-full mq800:text-13xl mq450:text-5xl">
             Expert Craftsmanship
           </h2>

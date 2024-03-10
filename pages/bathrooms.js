@@ -57,8 +57,8 @@ const Bathrooms = () => {
         </b>
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-14 pr-[23px] pl-[49px] box-border gap-[0px_50px] max-w-full text-justify text-xl text-kuno-red font-footer-bold-text mq1225:flex-wrap mq1225:pl-6 mq1225:box-border mq750:gap-[0px_50px] mq750:pt-9 mq750:pb-9 mq750:box-border">
-        <div className="w-[453px] flex flex-col items-center justify-center max-w-full mq450:gap-[68px_0px]">
-          <div className="w-[391px] relative font-medium inline-block max-w-full mq450:text-base">
+        <div className="flex flex-col items-center justify-center max-w-full mq450:gap-[68px_0px]">
+          <div className="relative font-medium inline-block max-w-full mq450:text-base">
             Our comprehensive bathroom renovation services cover everything from
             plumbing and fixtures to tiling and lighting, all tailored to your
             preferences.

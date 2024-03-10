@@ -3,7 +3,16 @@ import HonoringMessage from "../components/honoring-message";
 import RenovationDetails from "../components/renovation-details";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import { useCallback } from "react";
+import { useRouter } from "next/router";
+
 const AdditionRenovations = () => {
+  const router = useRouter();
+
+  const onCallUsClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-5 px-0 pb-0 box-border tracking-[normal]">
 <Navbar />
@@ -24,8 +33,10 @@ const AdditionRenovations = () => {
           With our expertise and dedication, let's bring your home addition or
           renovation project to life. Contact us today to begin your journey!
         </h3>
-        <button className="cursor-pointer pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
-          <div className="relative text-17xl font-medium font-footer-bold-text text-kuno-red text-left">
+        <button className="cursor-pointer pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+        onClick={onCallUsClick}
+        >
+          <div className="relative text-17xl font-medium font-footer-bold-text text-kuno-red text-left ">
             CALL US
           </div>
         </button>

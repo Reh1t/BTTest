@@ -1,8 +1,8 @@
 import { useCallback } from "react";
+import { useRouter } from "next/router";
 import CaseworkHeroSection from "../components/casework-hero-section";
 import BathroomsCarpentry2 from "../components/bathrooms-carpentry2";
 import BathroomsCarpentry1 from "../components/bathrooms-carpentry1";
-import { useRouter } from "next/router";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 const CaseworkPage = () => {
@@ -18,26 +18,20 @@ const CaseworkPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
-<Navbar />
+      <Navbar />
       <CaseworkHeroSection />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_102px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:gap-[50px_102px] lg:pl-[33px] lg:pr-9 lg:box-border mq750:gap-[50px_102px] mq750:pt-9 mq750:pb-9 mq750:box-border">
-        <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
+        <div className="max-w-[544px] flex flex-col items-start justify-start gap-[16px_0px] md:max-w-full">
           <h1 className="m-0 relative text-inherit font-bold font-inherit inline-block max-w-full mq450:text-5xl mq1050:text-13xl">
             Custom Casework
           </h1>
-          <div className="w-[544px] h-36 relative text-base text-justify inline-block">
+          <div className="h-36 relative text-base text-justify inline-block">
             <p className="m-0 whitespace-pre-wrap">
               Transform your home into a haven of order and sophistication with
               our tailored storage options that cater your unique needs and
-              aesthetic preferences.
-            </p>
-            <p className="m-0">
-              Explore endless possibilities in optimizing space and decluttering
+              aesthetic preferences. Explore endless possibilities in optimizing space and decluttering
               your surroundings, as we turn your vision into reality with our
-              expert craftsmanship and personalized touch.
-            </p>
-            <p className="m-0">
-              Elevate your lifestyle with Cabinets, Closets and More -where
+              expert craftsmanship and personalized touch. Elevate your lifestyle with Cabinets, Closets and More -where
               every inch of space is a masterpiece waiting to be unveiled.
             </p>
           </div>
@@ -56,17 +50,15 @@ const CaseworkPage = () => {
           alt=""
           src="/photo1@2x.png"
         />
-        <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
-          <h1 className="m-0 w-[577px] relative text-inherit font-bold font-inherit inline-block mq450:text-5xl mq1050:text-13xl">{`Experience the pinnacle of craftsmanship `}</h1>
-          <div className="w-[544px] h-[108px] relative text-base text-justify inline-block max-w-full">
-            With our customizable casework, showcase your hobbies, your loved
-            ones, and your style, turning functional storage into personalized
-            expressions that resonate with the heart of your home. Whether it’s
-            a treasured coin collectors’ display, a beloved pets’ photos or
-            simply a valued keepsake or cherished belonging, display it
-            beautifully with our tailorable casework and/or cabinetry.
+        <div class="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
+          <h1 class="m-0 w-full max-w-[577px] relative text-inherit font-bold font-inherit inline-block mq450:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+            Experience the pinnacle of craftsmanship
+          </h1>
+          <div class="w-full max-w-[544px] relative text-base text-justify inline-block">
+            With our customizable casework, showcase your hobbies, your loved ones, and your style, turning functional storage into personalized expressions that resonate with the heart of your home. Whether it’s a treasured coin collectors’ display, a beloved pets’ photos or simply a valued keepsake or cherished belonging, display it beautifully with our tailorable casework and/or cabinetry.
           </div>
         </div>
+
       </section>
       <section className="bg-white overflow-hidden flex flex-row flex-wrap items-start justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_48px] max-w-full mq750:gap-[50px_48px] mq750:py-9 mq750:pr-9 mq750:pl-[33px] mq750:box-border">
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">
@@ -83,22 +75,29 @@ const CaseworkPage = () => {
             loading="lazy"
             alt=""
             src="/photo1@2x.png"
-            />
+          />
         </div>
       </section>
       <section className="self-stretch overflow-hidden flex flex-row flex-wrap items-center justify-between py-2.5 pr-[105px] pl-[97px] box-border max-w-full gap-[20px] text-justify text-xl text-kuno-red font-footer-bold-text mq450:pl-5 mq450:pr-5 mq450:box-border mq750:pl-12 mq750:pr-[52px] mq750:box-border">
-        <div className="w-[685px] flex flex-row items-end justify-start pt-[33px] px-0 pb-0 box-border relative gap-[0px_10px] max-w-full">
-          <div className="w-[1245px] absolute !m-[0] top-[0px] right-[-560px] font-medium inline-block mq450:text-base">
+        <div className="w-full md:w-[685px] flex flex-col md:flex-row items-start md:items-end justify-end pt-[33px] md:pt-0 px-0 pb-0 box-border relative gap-[0px_10px] max-w-full">
+          <div className="font-medium inline-block md:static md:right-[16px] mq450:text-base">
             WOODEN MARVELS
           </div>
-          <h1 className="m-0 w-[565px] relative text-21xl font-bold font-inherit text-left inline-block shrink-0 max-w-full mq450:text-5xl mq1050:text-13xl">{`Millwork, Inlays & Decals`}</h1>
+          <h1 className="m-0 w-full md:w-[565px] relative text-21xl md:text-5xl font-bold font-inherit text-left md:text-right inline-block shrink-0 max-w-full">
+            Millwork, Inlays & Decals
+          </h1>
         </div>
-        <button className="cursor-pointer pt-[15px] pb-4 pr-[38px] pl-[42px] bg-[transparent] w-[188px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
-          <div className="relative text-base font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
-            LEARN MORE
-          </div>
-        </button>
+        <div className="flex justify-center w-full md:w-auto"> 
+          <button className="cursor-pointer pt-[15px] pb-4 pr-[38px] pl-[42px] bg-[transparent] w-[188px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
+            <div className="relative text-base font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
+              LEARN MORE
+            </div>
+          </button>
+        </div>
       </section>
+
+
+
       <section className="bg-white overflow-hidden flex flex-row flex-wrap items-start justify-start py-14 pr-[73px] pl-[67px] box-border gap-[50px_48px] max-w-full mq750:gap-[50px_48px] mq750:py-9 mq750:pr-9 mq750:pl-[33px] mq750:box-border">
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">
           <img
@@ -133,10 +132,10 @@ const CaseworkPage = () => {
           <b
             className="relative text-21xl font-footer-bold-text text-white text-center cursor-pointer"
             onClick={onContactUsNowClick}
-            >{`Contact Us Now! `}</b>
+          >{`Contact Us Now! `}</b>
         </button>
       </footer>
-<Footer/>
+      <Footer />
     </div>
   );
 };

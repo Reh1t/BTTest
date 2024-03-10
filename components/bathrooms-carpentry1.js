@@ -1,4 +1,14 @@
+import { useCallback } from "react";
+import { useRouter } from "next/router";
+
 const BathroomsCarpentry1 = () => {
+  const router = useRouter();
+
+  const onLearnMoreClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
+
   return (
     <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-between py-14 px-[67px] box-border gap-[20px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:pl-[33px] lg:pr-[33px] lg:box-border mq750:pt-9 mq750:pb-9 mq750:box-border">
       <img
@@ -7,11 +17,11 @@ const BathroomsCarpentry1 = () => {
         alt=""
         src="/photo1@2x.png"
       />
-      <div className="w-[544px] flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
+      <div className="w-[600px] flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
         <h1 className="m-0 relative text-inherit font-bold font-inherit mq450:text-5xl mq1050:text-13xl">
           Closet Solutions
         </h1>
-        <div className="w-[544px] relative text-base text-justify inline-block">
+        <div className="relative text-base text-justify inline-block">
           Tailored to your unique preferences and lifestyle, our custom
           solutions redefine the way you store and showcase your wardrobe. From
           maximizing space efficiency to integrating personalized storage
@@ -21,7 +31,10 @@ const BathroomsCarpentry1 = () => {
           with unparalleled style and sophistication.
         </div>
         <div className="self-stretch flex flex-col items-center justify-center">
-          <button className="cursor-pointer py-1.5 px-2 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
+          <button 
+          className="cursor-pointer py-1.5 px-2 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+          onClick={onLearnMoreClick}
+          >
             <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
               LEARN MORE
             </div>

@@ -22,9 +22,8 @@ const RenovationDetails = () => {
         <div className="self-stretch flex flex-col items-start justify-start gap-[20px_0px] max-w-full">
           <div className="flex flex-col items-start justify-start gap-[1px_0px] max-w-full">
             <h1
-              className="m-0 relative text-inherit font-bold font-inherit inline-block max-w-full cursor-pointer mq800:text-13xl mq450:text-5xl"
-              onClick={onAccessibleWashroomsTextClick}
-            >
+              className="m-0 relative text-inherit font-bold font-inherit inline-block max-w-full mq800:text-13xl mq450:text-5xl"
+              >
               Accessible washrooms
             </h1>
             <div className="w-[652px] relative text-base text-justify inline-block">
@@ -35,8 +34,10 @@ const RenovationDetails = () => {
             </div>
           </div>
           <div className="self-stretch flex flex-col items-center justify-center">
-            <button className="cursor-pointer py-1.5 px-2 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
-              <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
+            <button className="cursor-pointer py-1.5 px-2 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+              onClick={onAccessibleWashroomsTextClick}
+              >
+              <div className="relative text-xs font-footer-bold-text text-sandybrown cursor-pointer text-left whitespace-nowrap">
                 LEARN MORE
               </div>
             </button>

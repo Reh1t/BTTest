@@ -6,14 +6,15 @@ const BathroomsCarpentry2 = () => {
           <h1 className="m-0 relative text-inherit font-bold font-inherit mq450:text-5xl mq1050:text-13xl">
             Cabinetry
           </h1>
-          <div className="w-[544px] relative text-base text-justify inline-block">
+          <div className="w-full max-w-[600px] relative text-base text-justify">
             <p className="m-0">
-              Experience the epitome of personalized luxury with our custom
-              cabinetry,
+              Experience the epitome of personalized luxury with our custom cabinetry,
+              meticulously crafted to complement your unique style and elevate the functionality
+              of your living spaces. Whether you desire sleek modern designs or timeless classics,
+              our custom cabinetry solutions offer unparalleled versatility to suit your every need.
             </p>
-            <p className="m-0">{`meticulously crafted to complement your unique style and elevate the functionality
-of your living spaces. Whether you desire sleek modern designs or timeless classics, our custom cabinetry solutions offer unparalleled versatility to suit your every need. `}</p>
           </div>
+
         </div>
         <div className="w-[358px] flex flex-col items-start justify-start gap-[10px_0px] max-w-full text-xl">
           <b className="w-[338px] relative inline-block max-w-full mq450:text-base">

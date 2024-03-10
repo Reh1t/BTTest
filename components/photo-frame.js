@@ -1,4 +1,15 @@
+import { useCallback } from "react";
+
 const PhotoFrame = () => {
+  const onButtonClick = useCallback(() => {
+    const anchor = document.querySelector(
+      "[data-scroll-to='RenovationDetails']"
+    );
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <section className="w-[1322px] flex flex-row items-center justify-start pt-0 px-5 pb-5 box-border gap-[0px_13px] max-w-full text-left text-5xl text-kuno-red font-footer-bold-text mq1150:flex-wrap">
       <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-[13px] box-border min-w-[423px] max-w-full mq800:min-w-full">
@@ -9,12 +20,15 @@ const PhotoFrame = () => {
             </h3>
             <h1 className="m-0 w-[637px] relative text-21xl font-bold font-inherit inline-block max-w-full mq800:text-13xl mq450:text-5xl">{`Addition &
 Renovations`}</h1>
-            <div className="w-[651px] relative text-base inline-block">
+            <div className="relative text-base inline-block">
               Crafting your dream home from concept to completion with expert
               precision and attention to detail
             </div>
           </div>
-          <button className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
+          <button
+            className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+            onClick={onButtonClick}
+          >
             <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
               LEARN MORE
             </div>

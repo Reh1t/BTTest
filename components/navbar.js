@@ -82,7 +82,7 @@ const Navbar = () => {
                             <option value="kitchens">Kitchens</option>
                             <option value="bathrooms">Bathrooms</option>
                             <option value="accessible-construction">Accessible Constructions</option>
-                            <option value="carpentry">Trim</option>
+                            <option value="carpentry-page">Trim</option>
                             <option value="d-e-c-k-s-p-a-t-i-o-s">Decks & Patios</option>
                         </select>
                     </div>
