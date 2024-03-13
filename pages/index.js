@@ -23,8 +23,11 @@ const LandingPageHomePage = () => {
   }, [router]);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start tracking-[normal]">
+    <div>
+    <div>
       <Navbar />
+    </div>
+    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start tracking-[normal]">
       <HeroSection />
       <HonoringTraditionEmbracingI />
       <DesignThatSizzles />
@@ -57,6 +60,7 @@ const LandingPageHomePage = () => {
       </section>
       <NewsletterCTA />
       <Footer/>
+    </div>
     </div>
   );
 };

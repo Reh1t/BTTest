@@ -48,7 +48,7 @@ const BathroomsCarpentry2 = () => {
         className="w-[654px] max-h-full overflow-hidden shrink-0 object-cover max-w-full"
         loading="lazy"
         alt=""
-        src="/photo1@2x.png"
+        src="/uby-yanes-9H24Cxr5oog-unsplash.jpg"
       />
     </section>
   );

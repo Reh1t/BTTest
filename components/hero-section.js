@@ -12,7 +12,7 @@ const HeroSection = () => {
           </p>
         </div>
       </header>
-      <div className="flex flex-wrap justify-start py-6 pr-6 pl-6 box-border gap-6 md:gap-10 max-w-full">
+      <div className="h-auto w-full overflow-hidden overflow-y-auto flex flex-wrap items-start justify-center py-8 md:px-0 md:pr-8 gap-4 md:gap-6 lg:gap-8 max-w-full">
         <DesignCard
           photoPlaceholder="/photo-placeholder@2x.png"
           design="Design"

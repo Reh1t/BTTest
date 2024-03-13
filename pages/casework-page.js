@@ -16,6 +16,12 @@ const CaseworkPage = () => {
     router.push("/contact");
   }, [router]);
 
+  const onLearnMoreClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
+
+
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
       <Navbar />
@@ -40,7 +46,7 @@ const CaseworkPage = () => {
           className="h-[436px] flex-1 max-w-full overflow-hidden object-cover min-w-[335px]"
           loading="lazy"
           alt=""
-          src="/photo1@2x.png"
+          src="/BT_2024_Casework0.png"
         />
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_69px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:gap-[50px_69px] lg:pl-[33px] lg:pr-9 lg:box-border mq750:gap-[50px_69px] mq750:pt-9 mq750:pb-9 mq750:box-border">
@@ -48,7 +54,7 @@ const CaseworkPage = () => {
           className="h-[436px] flex-1 max-w-full overflow-hidden object-cover min-w-[335px]"
           loading="lazy"
           alt=""
-          src="/photo1@2x.png"
+          src="/BT_2024_Casework3.png"
         />
         <div class="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
           <h1 class="m-0 w-full max-w-[577px] relative text-inherit font-bold font-inherit inline-block mq450:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
@@ -66,7 +72,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/photo1@2x.png"
+            src="/BT_2024_Casework2.png"
           />
         </div>
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">
@@ -74,7 +80,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/photo1@2x.png"
+            src="/BT_2024_Casework1.png"
           />
         </div>
       </section>
@@ -88,7 +94,10 @@ const CaseworkPage = () => {
           </h1>
         </div>
         <div className="flex justify-center w-full md:w-auto"> 
-          <button className="cursor-pointer pt-[15px] pb-4 pr-[38px] pl-[42px] bg-[transparent] w-[188px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
+          <button 
+          className="cursor-pointer pt-[15px] pb-4 pr-[38px] pl-[42px] bg-[transparent] w-[188px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+          onClick={onLearnMoreClick}
+          >
             <div className="relative text-base font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
               LEARN MORE
             </div>
@@ -104,7 +113,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/photo1@2x.png"
+            src="/BT_2024_Casework5.png"
           />
         </div>
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">
@@ -112,7 +121,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/photo1@2x.png"
+            src="/BT_2024_Casework4.png"
           />
         </div>
       </section>

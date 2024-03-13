@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 const Kitchens = () => {
   return (
     <div className="w-full h-[3772px] relative bg-white overflow-hidden flex flex-row flex-wrap items-start justify-start tracking-[normal]">
-<Navbar />
+      <Navbar />
       <DesignProjectStaircase />
       <HiddenRefrigeratorsCustomCa />
       <section className="w-[1440px] !m-[0] absolute top-[1414px] left-[0px] bg-white overflow-hidden shrink-0 flex flex-row flex-wrap items-center justify-center p-[27px] box-border max-w-full text-center text-21xl text-kuno-red font-footer-bold-text">
@@ -26,7 +26,7 @@ const Kitchens = () => {
             className="self-stretch h-[436px] relative max-w-full overflow-hidden shrink-0 object-cover hidden"
             alt=""
             src="/adobestock-471485886-1-15@2x.png"
-            />
+          />
         </div>
         <div className="h-40 w-[544px] flex flex-row flex-wrap items-start justify-start relative gap-[16px] max-w-full">
           <div className="absolute !m-[0] top-[0px] left-[0px] mq450:text-lgi">
@@ -60,7 +60,7 @@ const Kitchens = () => {
       </section>
       <FrameComponent />
       <CTA />
-<Footer/>
+      <Footer />
     </div>
   );
 };

@@ -15,7 +15,7 @@ const BathroomsCarpentry1 = () => {
         className="w-[654px] max-h-full overflow-hidden shrink-0 object-cover max-w-full"
         loading="lazy"
         alt=""
-        src="/photo1@2x.png"
+        src="/AdobeStock_685495513 (3).jpeg"
       />
       <div className="w-[600px] flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
         <h1 className="m-0 relative text-inherit font-bold font-inherit mq450:text-5xl mq1050:text-13xl">

@@ -58,7 +58,7 @@ const CarpentryPage = () => {
           </div>
         </header>
 
-        <div className="h-auto w-full overflow-hidden overflow-y-auto flex flex-wrap items-start justify-center py-8 md:px-0 md:pr-8 lg:pr-16 gap-4 md:gap-6 lg:gap-8 max-w-full">
+        <div className="h-auto w-full overflow-hidden overflow-y-auto flex flex-wrap items-start justify-center py-8 md:px-0 md:pr-8 gap-4 md:gap-6 lg:gap-8 max-w-full">
           <Card
             photoPlaceholder="/photo-placeholder2@2x.png"
             conceptual="Design"
@@ -142,7 +142,7 @@ const CarpentryPage = () => {
             Elevate every aspect of your living space with our comprehensive
             carpentry services
           </h1>
-          <div className="w-[1245px] h-[23px] relative text-base text-justify inline-block shrink-0 max-w-full">
+          <div className="w-[1245px] h-auto relative text-base text-justify inline-block shrink-0 max-w-full">
             From custom home construction to accessible renovations, we
             specialize in creating environments that seamlessly blend
             functionality and aesthetics, ensuring your space reflects your
