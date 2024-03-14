@@ -72,7 +72,7 @@ module.exports = {
         raw: "screen and (max-width: 1225px)",
       },
       lg: {
-        max: "1200px",
+        max: "1024px",
       },
       mq1150: {
         raw: "screen and (max-width: 1150px)",

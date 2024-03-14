@@ -5,8 +5,6 @@ import PersonalizedServices1 from "../components/personalized-services1";
 import PersonalizedServices from "../components/personalized-services";
 import DesignInspiration from "../components/design-inspiration";
 import CTA1 from "../components/c-t-a1";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 
 
 const kitchens = () => {
@@ -18,7 +16,6 @@ const kitchens = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start pt-[3.5rem] px-[0rem] pb-[0rem] box-border  tracking-[normal]">
-      <Navbar />
       <CustomFrame />
       <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-start py-[1.75rem] pr-[4.813rem] pl-[4.875rem] box-border gap-[0.063rem] max-w-full text-left text-[1.5rem] text-kuno-red font-footer-bold-text mq750:pl-[2.438rem] mq750:pr-[2.375rem] mq750:box-border">
         <div className="w-[26.125rem] overflow-hidden shrink-0 flex flex-col items-start justify-start py-[0rem] px-[0.5rem] box-border gap-[1.375rem_0rem] max-w-full">
@@ -82,7 +79,6 @@ const kitchens = () => {
       </section>
       <DesignInspiration />
       <CTA1 />
-      <Footer/>
     </div>
   );
 };

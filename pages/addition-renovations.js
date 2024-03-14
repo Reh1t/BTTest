@@ -1,8 +1,6 @@
 import PhotoFrame from "../components/photo-frame";
 import HonoringMessage from "../components/honoring-message";
 import RenovationDetails from "../components/renovation-details";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
 
@@ -15,7 +13,6 @@ const AdditionRenovations = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-5 px-0 pb-0 box-border tracking-[normal]">
-<Navbar />
       <PhotoFrame />
       <HonoringMessage />
       <section className="w-[1320px] flex flex-row items-start justify-start pt-0 px-5 pb-[29px] box-border max-w-full text-left text-5xl text-kuno-red font-footer-bold-text">
@@ -34,14 +31,13 @@ const AdditionRenovations = () => {
           renovation project to life. Contact us today to begin your journey!
         </h3>
         <button className="cursor-pointer pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
-        onClick={onCallUsClick}
+          onClick={onCallUsClick}
         >
           <div className="relative text-17xl font-medium font-footer-bold-text text-kuno-red text-left ">
             CALL US
           </div>
         </button>
       </footer>
-<Footer/>
     </div>
   );
 };

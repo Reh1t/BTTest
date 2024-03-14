@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+
 const ConceptualModellingPlannin1 = () => {
   const router = useRouter();
 
@@ -11,7 +10,6 @@ const ConceptualModellingPlannin1 = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
-      <Navbar />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-5 px-0 box-border max-w-full [row-gap:20px] text-left text-5xl text-kuno-red font-footer-bold-text">
         <div className="flex-1 flex flex-col items-start justify-start py-0 pl-5 pr-5 box-border gap-[16px_0px] min-w-[462px] max-w-full mq750:min-w-full">
           <h3 className="m-0 relative text-inherit font-normal font-inherit mq450:text-lgi">
@@ -208,7 +206,6 @@ Expert Guidance`}</li>
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

@@ -3,8 +3,6 @@ import { useRouter } from "next/router";
 import CaseworkHeroSection from "../components/casework-hero-section";
 import BathroomsCarpentry2 from "../components/bathrooms-carpentry2";
 import BathroomsCarpentry1 from "../components/bathrooms-carpentry1";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 const CaseworkPage = () => {
   const router = useRouter();
 
@@ -24,7 +22,6 @@ const CaseworkPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
-      <Navbar />
       <CaseworkHeroSection />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_102px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:gap-[50px_102px] lg:pl-[33px] lg:pr-9 lg:box-border mq750:gap-[50px_102px] mq750:pt-9 mq750:pb-9 mq750:box-border">
         <div className="max-w-[544px] flex flex-col items-start justify-start gap-[16px_0px] md:max-w-full">
@@ -93,10 +90,10 @@ const CaseworkPage = () => {
             Millwork, Inlays & Decals
           </h1>
         </div>
-        <div className="flex justify-center w-full md:w-auto"> 
-          <button 
-          className="cursor-pointer pt-[15px] pb-4 pr-[38px] pl-[42px] bg-[transparent] w-[188px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
-          onClick={onLearnMoreClick}
+        <div className="flex justify-center w-full md:w-auto">
+          <button
+            className="cursor-pointer pt-[15px] pb-4 pr-[38px] pl-[42px] bg-[transparent] w-[188px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+            onClick={onLearnMoreClick}
           >
             <div className="relative text-base font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
               LEARN MORE
@@ -144,7 +141,6 @@ const CaseworkPage = () => {
           >{`Contact Us Now! `}</b>
         </button>
       </footer>
-      <Footer />
     </div>
   );
 };

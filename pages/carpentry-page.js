@@ -1,9 +1,7 @@
-import Card1 from "../components/card1";
 import Card from "../components/card";
 import { useCallback } from "react";
 import { useRouter } from "next/router";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+
 const CarpentryPage = () => {
   const router = useRouter();
 
@@ -42,7 +40,6 @@ const CarpentryPage = () => {
 
   return (
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start tracking-[normal] text-left text-21xl text-kuno-red font-footer-bold-text">
-      <Navbar />
       <div className="w-full relative bg-white overflow-hidden overflow-x-auto shrink-0 max-w-full">
         <header className="w-full overflow-hidden flex flex-col items-center justify-between p-5 box-border min-h-[152px] max-w-full text-left text-xl text-kuno-red font-footer-bold-text">
           <h1 className="m-0 relative text-21xl font-bold font-inherit">
@@ -224,7 +221,6 @@ const CarpentryPage = () => {
           </footer>
         </div>
       </section>
-      <Footer />
     </div>
   );
 };

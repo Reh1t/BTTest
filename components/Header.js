@@ -121,7 +121,7 @@ const Header = () => {
             <div className="flex space-x-4">
               {publicLogin !== '1' ? (
                 <div className="flex space-x-2">
-                  <Link href="/login" className="duration-300 bg-neutral-950 text-xs text-white font-bold px-4 py-2 rounded-full ml-4">
+                  <Link href="/" className="duration-300 bg-neutral-950 text-xs text-white font-bold px-4 py-2 rounded-full ml-4">
                     Login
                   </Link>
                 </div>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { FaCartArrowDown } from "react-icons/fa";
 import SidebarMenu from "./SidebarDark";
-import { Link } from 'react-router-dom'
+import Link from "next/link";
 import { FaSignOutAlt } from 'react-icons/fa';
 
 const Header = () => {
@@ -60,8 +59,8 @@ const Header = () => {
   };
 
   const closeDropdown = (event) => {
-    setIsOpen(false);
-
+      setIsOpen(false);
+    
   };
 
 
@@ -72,8 +71,8 @@ const Header = () => {
   };
 
   const closeDropdown2 = (event) => {
-    setIsOpen2(false);
-
+      setIsOpen2(false);
+    
   };
 
 
@@ -84,8 +83,8 @@ const Header = () => {
   };
 
   const closeDropdown3 = (event) => {
-    setIsOpen3(false);
-
+      setIsOpen3(false);
+    
   };
 
 
@@ -94,12 +93,12 @@ const Header = () => {
 
   const toggleDropdown4 = () => {
     setIsOpen4(!isOpen4);
-
+    
   };
 
   const closeDropdown4 = (event) => {
-    setIsOpen4(false);
-
+      setIsOpen4(false);
+    
 
   };
 
@@ -109,34 +108,34 @@ const Header = () => {
 
 
 
-  const [selectedButton, setSelectedButton] = useState("All");
+    const [selectedButton, setSelectedButton] = useState("All");
 
 
-  const changeHandler = (e) => {
-    const { name } = e.target;
-    setSelectedButton(e.target.name);
-    setCategory(name);
+    const changeHandler = (e) => {
+        const { name } = e.target;
+        setSelectedButton(e.target.name);
+        setCategory(name);
 
-  };
+    };
 
 
   return (
-    <header className="font-poppins">
+    <header className="font-poppins bg-white">
       <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <SidebarMenu />
-          <Link to="/" class="flex items-center">
+          <Link href="/" class="flex items-center">
             <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-950 w-44 lg:w-24">RESIDENTIAL | COMMERCIAL</span>
           </Link>
           <div class="flex items-center lg:order-2 md:border-l-2 pl-4">
-
+          
             <div className="flex space-x-4">
               {publicLogin !== '1' ? (
                 <div className="flex space-x-2">
                   {/* <button onClick={handleSignUp} className="ml-4 bg-transparent duration-300 text-sm text-sky-700 font-semibold py-2 px-4 hover:border-transparent rounded">
                   Sign Up
                 </button> */}
-                  <Link to="/login" className="duration-300 bg-neutral-950 text-xs text-white font-bold px-4 py-2 rounded-full ml-4">
+                  <Link href="/login" className="duration-300 bg-neutral-950 text-xs text-white font-bold px-4 py-2 rounded-full ml-4">
                     Login
                   </Link>
                 </div>
@@ -146,7 +145,13 @@ const Header = () => {
                 <div className="container mx-auto flex items-center justify-between px-4">
                   <div className="flex flex-row items-center justify-between">
                     <div className="rounded-full bg-gray-950 text-white shadow w-8 h-8 flex items-center justify-center relative ml-4 font-bold">
-
+                      {/* Add your avatar image or icon here */}
+                      {/* <img
+                      className="rounded-full object-cover object-center"
+                      src={`https://gigadevden.com${image}`}
+                      alt="public-profile-icon"
+                      style={{ width: '100%', height: '100%' }}
+                    /> */}
                       {getFirstUppercaseLetter(name)}
                     </div>
 
@@ -155,9 +160,20 @@ const Header = () => {
                       onClick={handleLogout}
                     >
                       <div className="flex flex-row ">
+                        {/* <div className="dots w-1 h-1 bg-black dark:bg-black rounded-full"></div>
+                      <div className="dots w-1 h-1 bg-black dark:bg-black rounded-full ml-[2px]"></div>
+                      <div className="dots w-1 h-1 bg-black dark:bg-black rounded-full ml-[2px]"></div> */}
                         <FaSignOutAlt className="text-gray-950" />
                       </div>
                     </button>
+
+                    {/* {isMenuOpen && (
+                    <ul className="absolute right-0 top-full mt-2 w-48 bg-white rounded shadow-lg py-2">
+                      <li className="py-1 px-4 hover:text-gray-700 text-gray-500 cursor-pointer">Profile</li>
+                      <li className="py-1 px-4 hover:text-gray-700 text-gray-500 cursor-pointer">Settings</li>
+                      <li className="py-1 px-4 hover:text-gray-700 text-gray-500 cursor-pointer">Logout</li>
+                    </ul>
+                  )} */}
 
                     {isMenuOpen && (
                       <div
@@ -223,22 +239,37 @@ const Header = () => {
 
 
             </div>
+            {/* <Link to="/login" class="text-white hover:bg-gray-50 focus:ring-4 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none focus:ring-gray-800">Log in</Link> */}
 
+            {/* <a href="#" class="text-white bg-gray-900 hover:bg-gray-950 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 focus:outline-none ">Get started</a> */}
+            {/* <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button> */}
 
           </div>
           <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
             <ul class="flex flex-col mt-4 font-normal lg:flex-row lg:space-x-8 lg:mt-0 text-sm">
+              {/* <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-white rounded bg-blue-700 lg:bg-transparent lg:text-blue-700 lg:p-0 dark:text-white" aria-current="page">Home</a>
+                        </li> */}
               <li>
-                <Link to="/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ideas</Link>
+                <Link href="/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ideas</Link>
               </li>
 
               <li>
-                <Link to="/menu" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+                <Link href="/menu" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
               </li>
               <li>
-                <Link to="/about" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About us</Link>
+                <Link href="/about" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About us</Link>
               </li>
-
+              {/* <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        </li> */}
             </ul>
           </div>
         </div>
@@ -255,14 +286,14 @@ const Header = () => {
 
 
         <div class="flex justify-center items-center mt-6">
-
-
+    
+         
           <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
             <ul class="flex flex-col mt-4 font-normal lg:flex-row lg:space-x-8 lg:mt-0 text-sm">
-
-              <li>
-                <img src="https://buildingtraditonpreview.vercel.app/bt-logo-2024-long@2x.png" className="h-auto w-40" />
-              </li>
+           
+           <li>
+            <img src="https://buildingtraditonpreview.vercel.app/bt-logo-2024-long@2x.png" className="h-auto w-40"/>
+           </li>
               <li>
 
 
@@ -315,7 +346,7 @@ const Header = () => {
                       </svg>
                     </button>
                     {isOpen2 && (
-                      <div id="dropdown-menu2" onMouseLeave={closeDropdown2} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                      <div id="dropdown-menu2"  onMouseLeave={closeDropdown2} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                         <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button2">
                           <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="light" width="18px" className="mr-2">
@@ -430,11 +461,11 @@ const Header = () => {
 
 
               </li>
-
+              
 
               <li>
-                <img src="" className="h-auto w-40" />
-              </li>
+            <img src="" className="h-auto w-40"/>
+           </li>
 
 
             </ul>
@@ -443,45 +474,95 @@ const Header = () => {
 
 
 
-
+        
         <div class="lg:hidden flex items-center justify-between space-x-8 mb-16 md:mb-20 bg-white  bg-opacity-50 rounded-b-lg pb-6 px-5"
-          style={{ boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)' }}>
+                style={{ boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)'}}>
 
 
-          <div id="journal-scroll" className="text-sm scrollable-container flex items-center space-x-4 overflow-y-auto whitespace-nowrap">
-            <button
-              name="All"
-              onClick={changeHandler}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "All" ? "text-gray-900 bg-gray-100" : "text-gray-600"
-                }`}
-            >
-              All
-            </button>
-            <button
-              title="Tailwind Grid"
-              name="Programming/Software Development"
-              onClick={changeHandler}
-              className={`duration-300 px-3 py-1.5 capitalize hover:bg-gray-100 rounded-lg ${selectedButton === "Programming/Software Development" ? "text-gray-900 bg-gray-100" : "text-gray-600"
-                }`}
-            >
-              Programming / Software Development
-            </button>
+                    <div id="journal-scroll" className="text-sm scrollable-container flex items-center space-x-4 overflow-y-auto whitespace-nowrap">
+                        <button
+                            name="All"
+                            onClick={changeHandler}
+                            className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "All" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+                                }`}
+                        >
+                            All
+                        </button>
+                        <button
+                            title="Tailwind Grid"
+                            name="Programming/Software Development"
+                            onClick={changeHandler}
+                            className={`duration-300 px-3 py-1.5 capitalize hover:bg-gray-100 rounded-lg ${selectedButton === "Programming/Software Development" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+                                }`}
+                        >
+                            Programming / Software Development
+                        </button>
 
-            <button
-              title="Tailwind Grid"
-              name="3"
-              onClick={changeHandler}
-              className={`duration-300 px-3 py-1.5 capitalize hover:bg-gray-100 rounded-lg ${selectedButton === "3" ? "text-gray-900 bg-gray-100" : "text-gray-600"
-                }`}
-            >
-              Third Button
-            </button>
+                        <button
+                            title="Tailwind Grid"
+                            name="3"
+                            onClick={changeHandler}
+                            className={`duration-300 px-3 py-1.5 capitalize hover:bg-gray-100 rounded-lg ${selectedButton === "3" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+                                }`}
+                        >
+                            Third Button
+                        </button>
+                      
+                    </div>
 
-          </div>
-        </div>
+                
 
-        <style>
-          {`
+                    {/* 
+                    <div className="relative inline-block w-auto mb-16 mt-8">
+                        <div>
+                            <button
+                                type="button"
+                                className="flex items-center justify-center px-4 py-2 mt-4 space-x-3 text-gray-600 transition-colors duration-300 transform border rounded-lg md:mt-0 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-primary dark:focus:border-primary focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-20"
+                            >
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 20 20"
+                                    fill="currentColor"
+                                    className="w-4 h-4"
+                                >
+                                    <path
+                                        fillRule="evenodd"
+                                        d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z"
+                                        clipRule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>All version</span>
+                            </button>
+                        </div>
+                        <div className="absolute left-0 z-20 py-1 mt-2 bg-yellow-500 border border-gray-100 rounded-md shadow-xl xl:left-auto xl:right-0" style={{ display: "none" }}>
+                            <div className="w-32">
+                                <a href="https://tailwindcomponents.com/components/grid" className="block px-4 py-2 text-sm text-gray-700 capitalize transition-colors duration-300 transform hover:text-primary">
+                                    All version
+                                </a>
+                                <a href="https://tailwindcomponents.com/components/grid?version=3" className="block px-4 py-2 text-sm text-gray-700 capitalize transition-colors duration-300 transform hover:text-primary">
+                                    version 3
+                                </a>
+                                <a href="https://tailwindcomponents.com/components/grid?version=2" className="block px-4 py-2 text-sm text-gray-700 capitalize transition-colors duration-300 transform hover:text-primary">
+                                    version 2
+                                </a>
+                                <a href="https://tailwindcomponents.com/components/grid?version=1" className="block px-4 py-2 text-sm text-gray-700 capitalize transition-colors duration-300 transform hover:text-primary">
+                                    version 1
+                                </a>
+                                <a href="https://tailwindcomponents.com/components/grid?version=0" className="block px-4 py-2 text-sm text-gray-700 capitalize transition-colors duration-300 transform hover:text-primary">
+                                    Beta version
+                                </a>
+                                <div id="extwaiokist" style={{ display: "none" }} v="dbhdf" q="36f0aeaa" c="53.89" i="64" u="12.90" s="06182305" sg="svr_undefined-ga_06182305-bai_06032321" d="1" w="false" e="" a="2" m="BMe=" vn="9zsmd">
+                                    <div id="extwaigglbit" style={{ display: "none" }} v="dbhdf" q="36f0aeaa" c="53.89" i="64" u="12.90" s="06182305" sg="svr_undefined-ga_06182305-bai_06032321" d="1" w="false" e="" a="2" m="BMe="></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */}
+
+
+                </div>
+
+                <style>
+                    {`
   #journal-scroll {
     height: 75px;
     overflow-y: auto;
@@ -505,7 +586,7 @@ const Header = () => {
     background: transparent;
   }
 `}
-        </style>
+                </style>
 
 
 

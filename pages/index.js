@@ -1,5 +1,3 @@
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import { useCallback } from "react";
 import HeroSection from "../components/hero-section";
 import HonoringTraditionEmbracingI from "../components/honoring-tradition-embracing-i";
@@ -56,7 +54,6 @@ const LandingPageHomePage = () => {
         </h3>
       </section>
       <NewsletterCTA />
-      <Footer/>
     </div>
     </div>
   );
