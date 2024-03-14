@@ -97,13 +97,13 @@ const Header = () => {
 
 
   return (
-    <header className= " bg-white max-w-full z-10 fixed top-0 left-0 right-0">
+    <header className= "bg-white max-w-full z-10 fixed top-0 left-0 right-0">
       <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
-        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl h-10">
           <SidebarMenu />
-          <Link href="/" class="flex items-center">
-            <span class="self-center text-lg font-semibold whitespace-nowrap text-gray-950 w-44 lg:w-24">RESIDENTIAL | COMMERCIAL</span>
-          </Link>
+          <button href="/" class="flex items-center">
+            <span class="text-lg font-semibold whitespace-nowrap text-gray-950 w-44 lg:w-24">RESIDENTIAL | COMMERCIAL</span>
+          </button>
           <div class="flex items-center lg:order-2 md:border-l-2 pl-4">
             <div className="flex space-x-4">
               {publicLogin !== '1' ? (
@@ -198,7 +198,7 @@ const Header = () => {
         {/* Lower Bar */}
 
 
-        <div class="flex justify-center items-center mt-6">
+        {/* <div class="flex justify-center items-center mt-6">
           <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
             <ul class="flex flex-col mt-4 font-normal lg:flex-row lg:space-x-8 lg:mt-0 text-sm">
               <li>
@@ -341,8 +341,8 @@ const Header = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div class="lg:hidden flex items-center justify-between space-x-8 mb-16 md:mb-20 bg-white  bg-opacity-50 rounded-b-lg pb-6 px-5"
+        </div> */}
+        <div class="flex items-center justify-between h-16 space-x-8 md:mb-20 bg-white  bg-opacity-50 rounded-b-lg pb-6 px-5"
           style={{ boxShadow: '0 0 5px rgba(0, 0, 0, 0.1)' }}>
           <div id="journal-scroll" className="text-sm scrollable-container flex items-center space-x-4 overflow-y-auto whitespace-nowrap">
             <button
@@ -561,7 +561,7 @@ const Header = () => {
         <style>
           {`
   #journal-scroll {
-    height: 75px;
+    height: 80px;
     overflow-y: auto;
   }
 
