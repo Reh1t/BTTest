@@ -26,7 +26,7 @@ const CustomFrame = () => {
                 <b className="relative mq450:text-[1.188rem]">
                   by Building Tradition
                 </b>
-                <div className="self-stretch h-[9rem] relative text-[1rem] text-justify inline-block">
+                <div className="self-stretch relative text-[1rem] text-justify inline-block">
                   At Building Tradition, we understand that the kitchen is the
                   heart of the home, where cherished memories are made and
                   culinary creations come to life. Our team of skilled craftsmen
