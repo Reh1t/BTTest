@@ -16,6 +16,10 @@ const AccessibleConstruction = () => {
     router.push("/addition-renovations");
   }, [router]);
 
+  const onCallUsClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
   const onButton2Click = useCallback(() => {
     window.open(
       "https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/budget-2022-plan-grow-economy-make-life-more-affordable/home-accessibility-tax-credit.html"
@@ -222,7 +226,10 @@ const AccessibleConstruction = () => {
             project to life. Contact us today to begin your journey!
           </span>
         </h3>
-        <button className="cursor-pointer pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
+        <button 
+        className="cursor-pointer pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+        onClick={onCallUsClick}
+        >
           <div className="relative text-17xl font-medium font-footer-bold-text text-kuno-red text-left">
             CALL US
           </div>
