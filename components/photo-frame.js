@@ -3,7 +3,7 @@ import { useCallback } from "react";
 const PhotoFrame = () => {
   const onButtonClick = useCallback(() => {
     const anchor = document.querySelector(
-      "[data-scroll-to='RenovationDetails']"
+      "[data-scroll-to='/RenovationDetails']"
     );
     if (anchor) {
       anchor.scrollIntoView({ block: "start", behavior: "smooth" });

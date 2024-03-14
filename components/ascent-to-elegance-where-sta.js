@@ -8,6 +8,10 @@ const AscentToEleganceWhereSta = () => {
     router.push("/staircases-pages");
   }, [router]);
 
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
+  
   return (
     <section className="self-stretch bg-white overflow-hidden flex flex-col items-center justify-center pt-0 px-0 pb-2.5 box-border max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
       <div className="self-stretch overflow-hidden flex flex-row items-center justify-center py-5 px-[214px] mq750:pl-[107px] mq750:pr-[107px] mq750:box-border mq450:pl-5 mq450:pr-5 mq450:box-border">
@@ -35,7 +39,9 @@ const AscentToEleganceWhereSta = () => {
           </div>
           <div className="self-stretch flex flex-col items-center justify-start p-2.5">
             <button className="cursor-pointer py-1.5 px-[9px] bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
-              <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
+              <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap"
+              onClick={() => handleNavigation("./contact")}
+              >
                 LEARN MORE
               </div>
             </button>

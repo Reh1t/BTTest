@@ -4,7 +4,7 @@ import TheBuildingTraditionProcess from "../components/the-building-tradition-pr
 
 const CustomHomes = () => {
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-5 px-0 pb-0 box-border gap-[10px_0px] tracking-[normal] text-left text-21xl text-kuno-red font-footer-bold-text">
+    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-center justify-start px-0 pb-0 box-border gap-[10px_0px] tracking-[normal] text-left text-21xl text-kuno-red font-footer-bold-text">
       <TextFrameCustomHomes />
       <div className="flex flex-col items-center justify-start pt-0 px-5 pb-[17px] box-border max-w-full">
         <h2 className="m-0 relative text-inherit font-bold font-inherit mq800:text-13xl mq450:text-5xl">

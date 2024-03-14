@@ -61,7 +61,7 @@ const kitchens = () => {
       </section>
       <PersonalizedServices1 />
       <PersonalizedServices />
-      <section className="self-stretch flex flex-row items-start justify-center pt-[0rem] px-[1.25rem] pb-[1.688rem] box-border max-w-full text-center text-[2.5rem] text-kuno-red font-footer-bold-text">
+      <section className="pt-32 self-stretch flex flex-row items-start justify-center px-[1.25rem] pb-[1.688rem] box-border max-w-full text-center text-[2.5rem] text-kuno-red font-footer-bold-text">
         <h2 className="m-0 w-full relative text-inherit font-bold font-inherit inline-block shrink-0 max-w-full mq1050:text-[2rem] mq450:text-[1.5rem]">
           With our guaranteed service contract, and our quality-ensured
           warranty; you and your family are protected.

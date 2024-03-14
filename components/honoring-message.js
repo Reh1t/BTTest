@@ -26,6 +26,7 @@ const HonoringMessage = () => {
             design="Kitchen Renovations "
             aVirtualCanvasForYourDrea="Create a space where cooking and gathering become a joyous experience for the whole family"
             onCardWithoutButton1Click={onCardWithoutButton1Click}
+            className="cursor-pointer"
           />
           <CardWithoutButton1
             photoPlaceholder="/photo-placeholder-6@2x.png"

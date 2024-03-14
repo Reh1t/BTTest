@@ -37,7 +37,7 @@ const Card = ({
         <img className="object-cover w-full h-full" loading="lazy" alt="" src={photoPlaceholder} />
       </div>
       <div className="flex-1">
-        <div className="py-0 pr-3.5 pl-[5px] cursor-pointer" onClick={onMainTextContainerClick} style={mainTextStyle}>
+        <div className="py-0 pr-3.5 pl-[5px]" onClick={onMainTextContainerClick} style={mainTextStyle}>
           <h3 className="m-0 font-bold mq450:text-lgi" onClick={onDesignText2Click}>
             <p className="m-0">{conceptual}</p>
             <p className="m-0">{modelling}</p>

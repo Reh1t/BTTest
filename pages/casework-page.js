@@ -21,7 +21,7 @@ const CaseworkPage = () => {
 
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
       <CaseworkHeroSection />
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_102px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:gap-[50px_102px] lg:pl-[33px] lg:pr-9 lg:box-border mq750:gap-[50px_102px] mq750:pt-9 mq750:pb-9 mq750:box-border">
         <div className="max-w-[544px] flex flex-col items-start justify-start gap-[16px_0px] md:max-w-full">

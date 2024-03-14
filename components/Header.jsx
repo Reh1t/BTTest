@@ -97,13 +97,16 @@ const Header = () => {
 
 
   return (
-    <header className= "bg-white max-w-full z-10 fixed top-0 left-0 right-0">
+    <header className="bg-white max-w-full z-10 fixed top-0 left-0 right-0">
       <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl h-10">
           <SidebarMenu />
-          <button href="/" class="flex items-center">
-            <span class="text-lg font-semibold whitespace-nowrap text-gray-950 w-44 lg:w-24">RESIDENTIAL | COMMERCIAL</span>
+          <button href="/" class="flex items-center cursor-pointer"
+          onClick={() => handleNavigation("./")}
+          >
+            <img src="/bt-logo-2024-long@2x.png" alt="Logo" class="w-40 h-auto mr-2 lg:w-16 lg:mr-1" />
           </button>
+
           <div class="flex items-center lg:order-2 md:border-l-2 pl-4">
             <div className="flex space-x-4">
               {publicLogin !== '1' ? (
@@ -180,16 +183,16 @@ const Header = () => {
               )}
             </div>
           </div>
-          <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+          <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 cursor-pointer" id="mobile-menu-2">
             <ul class="flex flex-col mt-4 font-normal lg:flex-row lg:space-x-8 lg:mt-0 text-sm">
               <li>
-                <Link href="#" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ideas</Link>
+                <Link href="#" class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ideas</Link>
               </li>
               <li>
-                <Link href="/contact" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
+                <Link href="/contact" class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
               </li>
               <li>
-                <Link href="/about-us" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About us</Link>
+                <Link href="/about-us" class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About us</Link>
               </li>
             </ul>
           </div>
@@ -348,7 +351,7 @@ const Header = () => {
             <button
               name="Home"
               onClick={() => handleNavigation("./")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Home" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Home" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Home
@@ -356,7 +359,7 @@ const Header = () => {
             <button
               name="Design"
               onClick={() => handleNavigation("./design-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Design" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Design" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Design
@@ -364,7 +367,7 @@ const Header = () => {
             <button
               name="Conceptual Modelling"
               onClick={() => handleNavigation("./conceptual-modelling-plannin1")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Conceptual Modelling" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Conceptual Modelling" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Conceptual Modelling
@@ -372,7 +375,7 @@ const Header = () => {
             <button
               name="Planning"
               onClick={() => handleNavigation("./conceptual-modelling-plannin1")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Planning" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Planning" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Planning
@@ -380,7 +383,7 @@ const Header = () => {
             <button
               name="Construction Design"
               onClick={() => handleNavigation("./construction-design")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Construction Design" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Construction Design" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Construction Design
@@ -388,7 +391,7 @@ const Header = () => {
             <button
               name="Construction Management"
               onClick={() => handleNavigation("./construction-management")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Construction Management" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Construction Management" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Construction Management
@@ -396,7 +399,7 @@ const Header = () => {
             <button
               name="Accessible Construction"
               onClick={() => handleNavigation("./accessible-construction")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Accessible Construction" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Accessible Construction" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Accessible Construction
@@ -404,7 +407,7 @@ const Header = () => {
             <button
               name="Carpentry"
               onClick={() => handleNavigation("./carpentry-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Carpentry" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Carpentry" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Carpentry
@@ -412,7 +415,7 @@ const Header = () => {
             <button
               name="Custom Homes"
               onClick={() => handleNavigation("./custom-homes")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Custom Homes" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Custom Homes" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Custom Homes
@@ -420,7 +423,7 @@ const Header = () => {
             <button
               name="Additions"
               onClick={() => handleNavigation("./addition-renovations")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Additions" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Additions" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Additions
@@ -428,15 +431,15 @@ const Header = () => {
             <button
               name="Renovations"
               onClick={() => handleNavigation("./addition-renovations")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Additions" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Additions" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
-              Additions
+              Renovations
             </button>
             <button
               name="Kitchens"
               onClick={() => handleNavigation("./kitchens")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Kitchens" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Kitchens" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Kitchens
@@ -444,7 +447,7 @@ const Header = () => {
             <button
               name="Bathrooms"
               onClick={() => handleNavigation("./bathrooms")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Bathrooms" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Bathrooms" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Bathrooms
@@ -452,7 +455,7 @@ const Header = () => {
             <button
               name="Trim"
               onClick={() => handleNavigation("./carpentry-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Trim" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Trim" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Trim
@@ -460,7 +463,7 @@ const Header = () => {
             <button
               name="Decks & Patios"
               onClick={() => handleNavigation("./d-e-c-k-s-p-a-t-i-o-s")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Decks & Patios" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Decks & Patios" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Decks & Patios
@@ -468,7 +471,7 @@ const Header = () => {
             <button
               name="Staircases"
               onClick={() => handleNavigation("./staircases-pages")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Staircases" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Staircases" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Staircases
@@ -476,7 +479,7 @@ const Header = () => {
             <button
               name="Open Riser"
               onClick={() => handleNavigation("./staircases-pages")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Open Riser" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Open Riser" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Open Riser
@@ -484,7 +487,7 @@ const Header = () => {
             <button
               name="Closed Riser"
               onClick={() => handleNavigation("./staircases-pages")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Closed Riser" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Closed Riser" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Closed Riser
@@ -492,7 +495,7 @@ const Header = () => {
             <button
               name="Retrofit"
               onClick={() => handleNavigation("./staircases-pages")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Retrofit" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Retrofit" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Retrofit
@@ -500,7 +503,7 @@ const Header = () => {
             <button
               name="Exterior"
               onClick={() => handleNavigation("./staircases-pages")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Exterior" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Exterior" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Exterior
@@ -508,7 +511,7 @@ const Header = () => {
             <button
               name="Casework"
               onClick={() => handleNavigation("./casework-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Casework" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Casework" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Casework
@@ -516,7 +519,7 @@ const Header = () => {
             <button
               name="Cabinetry"
               onClick={() => handleNavigation("./casework-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Cabinetry" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Cabinetry" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Cabinetry
@@ -524,7 +527,7 @@ const Header = () => {
             <button
               name="Closets"
               onClick={() => handleNavigation("./casework-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Closets" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Closets" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Closets
@@ -532,7 +535,7 @@ const Header = () => {
             <button
               name="Display Cases"
               onClick={() => handleNavigation("./casework-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Display Cases" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Display Cases" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Display Cases
@@ -540,7 +543,7 @@ const Header = () => {
             <button
               name="Custom Millwork"
               onClick={() => handleNavigation("./casework-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Custom Millwork" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Custom Millwork" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Custom Millwork
@@ -548,12 +551,12 @@ const Header = () => {
             <button
               name="Inlays & Decal"
               onClick={() => handleNavigation("./casework-page")}
-              className={`duration-300 px-3 py-1.5 hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Inlays & Decal" ? "text-gray-900 bg-gray-100" : "text-gray-600"
+              className={`duration-300 px-3 py-1.5 cursor-pointer  hover:bg-gray-100 rounded-lg capitalize ${selectedButton === "Inlays & Decal" ? "text-gray-900 bg-gray-100" : "text-gray-600"
                 }`}
             >
               Inlays & Decal
             </button>
-            
+
 
           </div>
         </div>

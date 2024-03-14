@@ -27,7 +27,7 @@ const AccessibleConstruction = () => {
   }, []);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-14 px-0 pb-0 box-border tracking-[normal]">
+    <div className="pt-40 w-full relative bg-white overflow-hidden flex flex-col items-center justify-start px-0 pb-0 box-border tracking-[normal] gap-5">
       <section className="self-stretch flex flex-row items-start justify-start pt-0 pb-7 pr-[23px] pl-[49px] box-border max-w-full mq750:pl-6 mq750:box-border">
         <header className="flex-1 flex flex-row flex-wrap items-start justify-start gap-[0px_37px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq750:gap-[0px_37px]">
           <div className="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">

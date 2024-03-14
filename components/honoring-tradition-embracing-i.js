@@ -1,6 +1,13 @@
 import CardWithoutButton from "./card-without-button";
+import { useRouter } from "next/router";
 
 const HonoringTraditionEmbracingI = () => {
+  const router = useRouter();
+  
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
+
   return (
     <section className="flex flex-col items-center justify-center max-w-full text-center text-21xl text-kuno-red font-footer-bold-text">
       <div className="py-5 px-5 md:px-40 sm:px-5 box-border max-w-full">
@@ -25,7 +32,9 @@ const HonoringTraditionEmbracingI = () => {
       </div>
       <div className="bg-white flex items-center justify-center py-5 px-5 md:p-5">
         <button className="py-1.5 px-9 bg-transparent rounded-mini border-2 border-solid border-sandybrown hover:bg-chocolate-200 hover:border-chocolate-100">
-          <div className="text-xs font-footer-bold-text text-sandybrown whitespace-nowrap">
+          <div className="text-xs font-footer-bold-text text-sandybrown whitespace-nowrap cursor-pointer"
+          onClick={() => handleNavigation("./contact")}
+          >
             LEARN MORE
           </div>
         </button>

@@ -7,7 +7,10 @@ const BathroomsCarpentry = () => {
   const onPhotoImageClick = useCallback(() => {
     router.push("/bathrooms");
   }, [router]);
-
+  
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
   return (
     <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-[30px] px-[67px] box-border gap-[0px_250px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq750:gap-[0px_250px] mq450:gap-[0px_250px] mq450:pt-5 mq450:pb-5 mq450:box-border mq1275:flex-wrap mq1275:gap-[0px_250px] mq1275:pl-[33px] mq1275:pr-[33px] mq1275:box-border">
       <div className="w-[420px] flex flex-col items-start justify-start gap-[16px_0px] min-w-[420px] max-w-full mq750:min-w-full mq1275:w-full mq1275:flex-1">
@@ -20,7 +23,9 @@ const BathroomsCarpentry = () => {
         </h1>
         <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-2.5 px-5">
           <button className="cursor-pointer py-1.5 px-[9px] bg-[transparent] w-[99px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
-            <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">
+            <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap"
+            onClick={() => handleNavigation("./contact")}
+            >
               LEARN MORE
             </div>
           </button>

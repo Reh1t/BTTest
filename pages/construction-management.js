@@ -1,6 +1,6 @@
 const ConstructionManagement = () => {
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-3 px-0 pb-5 box-border gap-[34px_0px] tracking-[normal] mq800:gap-[34px_0px]">
+    <div className="pt-44 w-full relative bg-white overflow-hidden flex flex-col items-center justify-start px-0 pb-5 box-border gap-[34px_0px] tracking-[normal] mq800:gap-[34px_0px]">
       <section className="w-[1298px] flex flex-row items-start justify-start py-0 px-5 box-border max-w-full text-left text-xl text-kuno-red font-footer-bold-text">
         <div className="w-[727px] flex flex-col items-start justify-start gap-[8px_0px] max-w-full">
           <div className="w-[351px] relative font-medium inline-block max-w-full mq450:text-base">

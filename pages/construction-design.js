@@ -18,7 +18,7 @@ const ConstructionDesign = () => {
   }, [router]);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-5 px-0 pb-[30px] box-border gap-[10px_0px] tracking-[normal]">
+    <div className="pt-40 w-full relative bg-white overflow-hidden flex flex-col items-center justify-start px-0 pb-[30px] box-border gap-[10px_0px] tracking-[normal]">
       <section className="w-[1382px] flex flex-row items-center justify-start pt-0 px-5 pb-[47px] box-border gap-[0px_92px] max-w-full text-left text-5xl text-kuno-red font-footer-bold-text mq750:gap-[0px_92px] mq750:pb-[31px] mq750:box-border mq450:gap-[0px_92px] mq1225:flex-wrap">
         <div className="flex-1 flex flex-col items-start justify-start pt-0 px-0 pb-3 box-border min-w-[473px] max-w-full mq750:min-w-full">
           <div className="self-stretch flex flex-col items-center justify-start gap-[20px_0px]">

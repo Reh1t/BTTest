@@ -11,14 +11,15 @@ import NewsletterCTA from "../components/newsletter-c-t-a";
 
 const LandingPageHomePage = () => {
   const router = useRouter();
+  
+  const onGetStartedTodayClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
 
   const onCabinetsClosetsCaseworkClick = useCallback(() => {
     router.push("/casework-page");
   }, [router]);
 
-  const onGetStartedTodayClick = useCallback(() => {
-    router.push("/contact");
-  }, [router]);
 
   return (
     <div className="pt-32">

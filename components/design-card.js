@@ -32,7 +32,7 @@ const DesignCard = ({
       <div className="self-stretch overflow-hidden flex flex-col items-center justify-end py-[7px] px-5 text-xs text-sandybrown">
         {/* "Learn more" button with navigation */}
         <div
-          className="max-w-[99px] rounded-mini box-border flex flex-row items-center justify-center py-1.5 px-2 gap-[10px] border-[2px] border-solid border-sandybrown"
+          className="max-w-[99px] cursor-pointer rounded-mini box-border flex flex-row items-center justify-center py-1.5 px-2 gap-[10px] border-[2px] border-solid border-sandybrown"
           onClick={handleNavigation} // Click event handler
         >
           <div className="relative whitespace-nowrap">LEARN MORE</div>
