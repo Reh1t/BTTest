@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
 
   const router = useRouter();
-  const websitePrefix = 'www.cafepiala.shop';
+  const websitePrefix = 'https://buildingtraditonpreview.vercel.app/';
 
   const [publicLogin, setPublicLogin] = useState('');
   const [name, setName] = useState('');
@@ -97,15 +97,14 @@ const Header = () => {
 
 
   return (
-    <header className="font-poppins bg-white">
+    <header className= " bg-white max-w-full z-10 fixed top-0 left-0 right-0">
       <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <SidebarMenu />
           <Link href="/" class="flex items-center">
-            <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-950 w-44 lg:w-24">RESIDENTIAL | COMMERCIAL</span>
+            <span class="self-center text-lg font-semibold whitespace-nowrap text-gray-950 w-44 lg:w-24">RESIDENTIAL | COMMERCIAL</span>
           </Link>
           <div class="flex items-center lg:order-2 md:border-l-2 pl-4">
-
             <div className="flex space-x-4">
               {publicLogin !== '1' ? (
                 <div className="flex space-x-2">
@@ -113,25 +112,13 @@ const Header = () => {
                     Login
                   </Link>
                 </div>
-
               ) : (
-
                 <div className="container mx-auto flex items-center justify-between px-4">
                   <div className="flex flex-row items-center justify-between">
                     <div className="rounded-full bg-gray-950 text-white shadow w-8 h-8 flex items-center justify-center relative ml-4 font-bold">
 
                       {getFirstUppercaseLetter(name)}
                     </div>
-
-                    <button
-                      className="flex items-center text-neutral-950 focus:outline-none ml-4 p-2 rounded"
-                      onClick={handleLogout}
-                    >
-                      <div className="flex flex-row ">
-
-                        <FaSignOutAlt className="text-gray-950" />
-                      </div>
-                    </button>
 
                     {isMenuOpen && (
                       <div

@@ -21,7 +21,7 @@ const LandingPageHomePage = () => {
   }, [router]);
 
   return (
-    <div>
+    <div className="pt-32">
     <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start tracking-[normal]">
       <HeroSection />
       <HonoringTraditionEmbracingI />
