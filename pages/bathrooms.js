@@ -2,7 +2,7 @@ import BathroomsCarpentry3 from "../components/bathrooms-carpentry3";
 
 const Bathrooms = () => {
   return (
-    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+    <div className="pt-40 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
       <BathroomsCarpentry3 />
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center pt-2.5 pb-[45px] pr-7 pl-[34px] box-border gap-[0px_131px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text mq1225:flex-wrap mq1225:gap-[0px_131px] mq750:gap-[0px_131px] mq750:pt-5 mq750:pb-[29px] mq750:box-border mq450:gap-[0px_131px]">
         <div className="w-[575px] overflow-hidden shrink-0 flex flex-row items-start justify-start min-w-[575px] max-w-full mq1225:flex-1 mq750:min-w-full">

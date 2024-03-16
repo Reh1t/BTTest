@@ -39,7 +39,7 @@ const DesignPage = () => {
 
   return (
     <div>
-      <div className="pt-36 w-full relative bg-white flex flex-col items-center justify-start tracking-[normal]">
+      <div className="pt-40 w-full relative bg-white flex flex-col items-center justify-start tracking-[normal]">
         <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-between min-h-[731px] max-w-full">
           <header className="w-[1439px] overflow-hidden shrink-0 flex flex-col items-center justify-start p-5 box-border gap-[14px_0px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text">
             <h1 className="m-0 relative text-inherit font-bold font-inherit">

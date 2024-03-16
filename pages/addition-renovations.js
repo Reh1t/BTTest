@@ -12,7 +12,7 @@ const AdditionRenovations = () => {
   }, [router]);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-32 px-0 pb-0 box-border tracking-[normal]">
+    <div className="w-full relative bg-white overflow-hidden flex flex-col items-center justify-start pt-44 px-0 pb-0 box-border tracking-[normal]">
       <PhotoFrame />
       <HonoringMessage />
       <section className="w-[1320px] flex flex-row items-start justify-start pt-0 px-5 pb-[29px] box-border max-w-full text-left text-5xl text-kuno-red font-footer-bold-text">

@@ -15,7 +15,7 @@ const StaircasesPages = () => {
   }, [router]);
 
   return (
-    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
+    <div className="pt-40 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start tracking-[normal]">
       <StairCaseHeroSection />
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-14 px-[49px] box-border gap-[0px_36px] max-w-full text-left text-xl text-kuno-red font-footer-bold-text mq825:gap-[0px_36px] mq825:pt-9 mq825:pb-9 mq825:box-border mq1425:flex-wrap mq1425:pl-6 mq1425:pr-6 mq1425:box-border">
         <div className="w-[572px] overflow-hidden shrink-0 flex flex-col items-start justify-center py-3 px-3.5 box-border gap-[140px_0px] min-w-[572px] max-w-full mq825:gap-[140px_0px] mq825:min-w-full mq450:gap-[140px_0px] mq1425:flex-1">

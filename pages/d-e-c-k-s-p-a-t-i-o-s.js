@@ -4,7 +4,7 @@ import Material from "../components/material";
 
 const DECKSPATIOS = () => {
   return (
-    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-center justify-start px-0 pb-2.5 box-border tracking-[normal]">
+    <div className="pt-40 w-full relative bg-white overflow-hidden flex flex-col items-center justify-start px-0 pb-2.5 box-border tracking-[normal]">
       <LinksHolderFrame />
       <section className="self-stretch bg-white overflow-hidden flex flex-row items-center justify-center py-2.5 px-0 box-border gap-[0px_131px] max-w-full text-left text-5xl text-kuno-red font-footer-bold-text mq750:gap-[0px_131px] mq450:gap-[0px_131px] mq1150:flex-wrap">
         <div className="w-[615px] overflow-hidden shrink-0 flex flex-row items-start justify-start py-0 px-5 box-border min-w-[615px] max-w-full mq750:min-w-full mq1150:flex-1">

@@ -15,7 +15,7 @@ const kitchens = () => {
   }, [router]);
 
   return (
-    <div className="w-full relative bg-white overflow-hidden flex flex-col items-start justify-start pt-[3.5rem] px-[0rem] pb-[0rem] box-border  tracking-[normal]">
+    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start px-[0rem] pb-[0rem] box-border  tracking-[normal]">
       <CustomFrame />
       <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-start py-[1.75rem] pr-[4.813rem] pl-[4.875rem] box-border gap-[0.063rem] max-w-full text-left text-[1.5rem] text-kuno-red font-footer-bold-text mq750:pl-[2.438rem] mq750:pr-[2.375rem] mq750:box-border">
         <div className="w-[26.125rem] overflow-hidden shrink-0 flex flex-col items-start justify-start py-[0rem] px-[0.5rem] box-border gap-[1.375rem_0rem] max-w-full">
@@ -49,10 +49,10 @@ const kitchens = () => {
           </div>
         </div>
       </section>
-      <section className="flex flex-row items-center justify-center pt-[0rem] px-[0rem] pb-[1.688rem] box-border max-w-full">
-        <div className="h-full flex-1 relative overflow-hidden max-w-full">
+      <section className="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[2.563rem] box-border w-full mq750:pb-[1.688rem] mq750:box-border">
+        <div className="h-[34.363rem] flex-1 relative overflow-hidden w-full">
           <img
-            className="relative h-full rounded-3xs max-h-full w-[59.5rem] object-cover"
+            className="absolute h-full rounded-3xs max-h-full w-full object-cover"
             loading="lazy"
             alt=""
             src="/adobestock-89308963-1-11@2x.png"
@@ -61,7 +61,7 @@ const kitchens = () => {
       </section>
       <PersonalizedServices1 />
       <PersonalizedServices />
-      <section className="pt-32 self-stretch flex flex-row items-start justify-center px-[1.25rem] pb-[1.688rem] box-border max-w-full text-center text-[2.5rem] text-kuno-red font-footer-bold-text">
+      <section className=" self-stretch flex flex-row items-start justify-center px-[1.25rem] pb-[1.688rem] box-border max-w-full text-center text-[2.5rem] text-kuno-red font-footer-bold-text">
         <h2 className="m-0 w-full relative text-inherit font-bold font-inherit inline-block shrink-0 max-w-full mq1050:text-[2rem] mq450:text-[1.5rem]">
           With our guaranteed service contract, and our quality-ensured
           warranty; you and your family are protected.

@@ -1,4 +1,12 @@
+import { useRouter } from "next/router";
+
 const CTA1 = () => {
+  const router = useRouter();
+  
+  const handleNavigation = (path) => {
+    router.push(path);
+  };
+
   return (
     <section className="self-stretch bg-sandybrown overflow-hidden flex flex-col items-center justify-start py-[6.938rem] px-[1.25rem] box-border relative gap-[1.5rem_0.625rem] max-w-full text-left text-[4rem] text-kuno-red font-footer-bold-text mq450:pt-[4.5rem] mq450:pb-[4.5rem] mq450:box-border">
       <img
@@ -21,7 +29,10 @@ const CTA1 = () => {
         </b>
       </div>
       <div className="w-[74.125rem] flex flex-row items-start justify-center max-w-full">
-        <button className="cursor-pointer py-[0.594rem] px-[2.563rem] bg-white rounded-mini overflow-hidden flex flex-row items-start justify-start whitespace-nowrap z-[1] border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100">
+        <button 
+        className="cursor-pointer py-[0.594rem] px-[2.563rem] bg-white rounded-mini overflow-hidden flex flex-row items-start justify-start whitespace-nowrap z-[1] border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+        onClick={() => handleNavigation("./contact")}
+        >
           <b className="relative text-[2rem] font-footer-bold-text text-kuno-red text-left">
             CALL US
           </b>
