@@ -22,9 +22,9 @@ const TextFrameCustomHomes = () => {
           </h2>
           <div className="flex flex-col items-center justify-start gap-[28px_0px] max-w-full text-justify text-base">
             <div className="relative inline-block">{`At Building Tradition, we elevate the art of custom home creation, meticulously turning your dreams into tangible realities. Our approach is deeply collaborative, ensuring that every detail of your vision is understood and brought to life with unparalleled precision and care. Whether it’s transforming an existing space or constructing a bespoke dream home from the foundation up, our expertise is your guarantee. With us, you're not just building a house; you're crafting your future in a space designed for living beautifully. `}</div>
-            <div className="w-[133px] flex flex-row items-start justify-start py-0 pr-0 pl-[34px] box-border">
+            <div className="w-[133px] flex flex-row items-start justify-center box-border">
               <button
-                className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] flex-1 rounded-mini overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+                className="cursor-pointer py-1.5 bg-[transparent] flex-1 rounded-mini overflow-hidden flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
                 onClick={onButtonClick}
               >
                 <div className="relative text-xs font-footer-bold-text text-sandybrown text-left whitespace-nowrap">

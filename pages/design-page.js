@@ -51,7 +51,7 @@ const DesignPage = () => {
               Phase of Your Project
             </div>
           </header>
-          <div className="h-auto w-full overflow-x-auto flex flex-wrap items-start justify-between py-8 px-4 lg:px-0 lg:pr-16 gap-4 lg:gap-8 max-w-full">
+          <div className="h-auto w-full overflow-x-auto flex flex-wrap items-center justify-center py-8 gap-4 lg:gap-8 max-w-full">
             <Card
               photoPlaceholder="/photo-placeholder1@2x.png"
               conceptual="Conceptual "

@@ -22,7 +22,7 @@ const AutomatedLighting = ({
 
   return (
     <div
-      className="flex-1 flex flex-col items-start justify-start min-w-[14.938rem] max-w-[19.938rem] text-center text-[1.5rem] text-kuno-red font-footer-bold-text"
+      className="flex-1 flex flex-col items-start justify-start min-w-[14.938rem] max-w-[19.938rem] text-center text-[1.5rem] text-kuno-red font-footer-bold-text gap-3"
       style={automatedLightingStyle}
     >
       <b className="self-stretch relative mq450:text-[1.188rem]">

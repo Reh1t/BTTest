@@ -51,7 +51,7 @@ const ConstructionDesign = () => {
               </div>
             </div>
 
-            <div className="w-[169px] flex flex-row items-start justify-start">
+            <div className="w-[169px] flex flex-row items-start justify-center">
               <button
                 className="cursor-pointer py-1.5 pr-[7px] pl-2.5 bg-[transparent] w-[93px] rounded-mini box-border overflow-hidden shrink-0 flex flex-row items-center justify-center border-[2px] border-solid border-sandybrown hover:bg-chocolate-200 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
                 onClick={onButtonClick}
@@ -258,11 +258,12 @@ const ConstructionDesign = () => {
       </section>
       <section className="self-stretch overflow-hidden flex flex-col items-center justify-center max-w-full">
         <img
-          className="w-[818px] relative rounded-3xs max-h-full object-cover max-w-full"
+          className="w-[818px] relative lg:rounded-3xs max-h-full object-cover max-w-full"
           alt=""
           src="/adobestock-278545655-2-1-1@2x.png"
         />
       </section>
+      
     </div>
   );
 };

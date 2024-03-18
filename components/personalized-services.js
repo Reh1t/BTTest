@@ -6,7 +6,7 @@ const PersonalizedServices = () => {
         data-scroll-to="personlizedServicesContainer"
       >
         <img
-          className="h-[27.25rem] flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover min-w-[20.938rem]"
+          className="flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover min-w-[20.938rem]"
           loading="lazy"
           alt=""
           src="/photo-11@2x.png"

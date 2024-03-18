@@ -29,7 +29,7 @@ const PersonalizedServices1 = () => {
             Ignite your passion for cooking and creativity
           </h2>
         </div>
-        <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[0rem_0.438rem] text-[1.5rem]">
+        <div className="self-stretch flex flex-row flex-wrap items-start justify-center gap-5 text-[1.5rem]">
           <AutomatedLighting
             culinaryHavensForEveryTas="Culinary havens for every taste and style"
             onButton1Click={onButtonClick}

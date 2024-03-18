@@ -204,12 +204,14 @@ const CarpentryPage = () => {
                 </div>
               </div>
             </div>
-            <div className="self-stretch overflow-hidden flex flex-row items-center justify-start py-0 pr-[85px] pl-20 box-border max-w-full mq450:pr-5 mq450:box-border mq925:pl-10 mq925:pr-[42px] mq925:box-border">
-              <div className="w-[1275px] relative inline-block shrink-0 max-w-full">
-                If you're interested in learning more about how to install shoe
-                moulding, be sure to sign up for our newsletter. You'll be the
-                first to know when we release our how-to video, guiding you
-                through the process step by step.
+            <div className="self-stretch flex flex-row items-center justify-center max-w-full">
+              <div className="flex flex-row items-center justify-center py-5 px-[30px] box-border max-w-full">
+                <div className="w-[1275px] relative inline-block shrink-0 max-w-full">
+                  If you're interested in learning more about how to install shoe
+                  moulding, be sure to sign up for our newsletter. You'll be the
+                  first to know when we release our how-to video, guiding you
+                  through the process step by step.
+                </div>
               </div>
             </div>
           </div>

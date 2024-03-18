@@ -218,16 +218,11 @@ const AccessibleConstruction = () => {
         <h3 className="m-0 w-[960px] h-14 relative text-5xl whitespace-pre-wrap text-center inline-block max-w-full font-inherit mq450:text-lgi">
           <span className="font-medium">
             With our expertise and dedication, let's bring your home Accessible
-            Construction
-          </span>
-          <b>{` `}</b>
-          <span className="font-medium">
-            {" "}
-            project to life. Contact us today to begin your journey!
+            Construction project to life. Contact us today to begin your journey!
           </span>
         </h3>
         <button 
-        className="cursor-pointer pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
+        className="cursor-pointer mt-5 pt-[7px] px-[7px] pb-2 bg-white w-[212px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center whitespace-nowrap border-[2px] border-solid border-sandybrown hover:bg-gainsboro-100 hover:box-border hover:border-[2px] hover:border-solid hover:border-chocolate-100"
         onClick={onCallUsClick}
         >
           <div className="relative text-17xl font-medium font-footer-bold-text text-kuno-red text-left">

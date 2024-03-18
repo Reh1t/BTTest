@@ -15,7 +15,7 @@ const kitchens = () => {
   }, [router]);
 
   return (
-    <div className="pt-32 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start px-[0rem] pb-[0rem] box-border  tracking-[normal]">
+    <div className="pt-40 w-full relative bg-white overflow-hidden flex flex-col items-start justify-start px-[0rem] pb-[0rem] box-border  tracking-[normal]">
       <CustomFrame />
       <section className="self-stretch bg-white flex flex-row flex-wrap items-start justify-start py-[1.75rem] pr-[4.813rem] pl-[4.875rem] box-border gap-[0.063rem] max-w-full text-left text-[1.5rem] text-kuno-red font-footer-bold-text mq750:pl-[2.438rem] mq750:pr-[2.375rem] mq750:box-border">
         <div className="w-[26.125rem] overflow-hidden shrink-0 flex flex-col items-start justify-start py-[0rem] px-[0.5rem] box-border gap-[1.375rem_0rem] max-w-full">

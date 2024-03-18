@@ -122,10 +122,11 @@ const ConstructionManagement = () => {
             />
           </div>
         </div>
-        <div className="w-[1320px] flex flex-col items-start justify-start py-0 px-5 box-border gap-[40px_0px] max-w-full text-base mq800:gap-[40px_0px]">
-          <div className="self-stretch overflow-hidden flex flex-col items-center justify-start py-0 px-5 box-border max-w-full">
+        <div className="w-[1320px] flex flex-col items-center justify-center py-0 px-5 box-border gap-[40px_0px] max-w-full text-base mq800:gap-[40px_0px]">
+      
+          <div className="w-[673px] rounded-3xs overflow-hidden shrink-0 flex flex-row items-center justify-end min-w-[673px] max-w-full mq1150:min-w-full mq1350:flex-1">
             <img
-              className="w-[1082px] relative rounded-xl max-h-full object-cover max-w-full"
+              className="h-[398px] flex-1 relative max-w-full overflow-hidden object-cover mq1350:flex-1"
               loading="lazy"
               alt=""
               src="/helicopter-lumber-1@2x.png"
