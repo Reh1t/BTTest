@@ -97,7 +97,7 @@ const Header = () => {
 
 
   return (
-    <header className="bg-white max-w-full z-10 fixed top-0 left-0 right-0">
+    <header className="bg-white font-text-regular-normal max-w-full z-10 fixed top-0 left-0 right-0">
       <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
         <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10">
           <div className="hidden lg:flex">
@@ -106,7 +106,7 @@ const Header = () => {
           <div class="lg:hidden flex items-center w-full font-semibold cursor-default">
             Residential | Commercial
           </div>
-          <button href="/" class="hidden lg:flex items-center cursor-pointer"
+          <button href="/" class="hidden lg:flex items-center cursor-pointer bg-transparent"
             onClick={() => handleNavigation("./")}
           >
             <img src="/bt-logo-2024-long@2x.png" alt="Logo" class="w-40 h-auto mr-2" />
@@ -127,9 +127,11 @@ const Header = () => {
           <div class="flex items-center lg:order-2 md:border-l-2 pl-4">
             <div className="flex space-x-4">
               <div className="flex space-x-2">
-                <Link href="/login" className="duration-300 bg-neutral-950 text-xs text-white font-bold px-4 py-2 rounded-full ml-4">
+                <button href="/login" className="duration-300 bg-neutral-950 text-xs text-white font-bold px-4 py-2 rounded-full ml-4"
+                onClick={() => handleNavigation("./login")}
+                >
                   Login
-                </Link>
+                </button>
               </div>
             </div>
 
