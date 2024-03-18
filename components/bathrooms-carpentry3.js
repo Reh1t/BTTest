@@ -23,7 +23,7 @@ const BathroomsCarpentry3 = () => {
             className="w-[181px] rounded-mini box-border overflow-hidden flex flex-row items-center justify-center py-1.5 px-[5px] cursor-pointer border-[2px] border-solid border-sandybrown"
             onClick={onButtonContainerClick}
           >
-            <b className="w-[167px] relative inline-block whitespace-nowrap mq450:text-lgi">
+            <b className="relative inline-block whitespace-nowrap mq450:text-lgi">
               LEARN MORE
             </b>
           </div>

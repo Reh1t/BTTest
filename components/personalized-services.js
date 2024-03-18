@@ -2,7 +2,7 @@ const PersonalizedServices = () => {
   return (
     <section className="self-stretch flex flex-row items-start justify-start pt-[0rem] px-[0rem] pb-[1.688rem] box-border max-w-full text-left text-[1.5rem] text-kuno-red font-footer-bold-text">
       <div
-        className="flex-1 bg-white overflow-hidden flex flex-row flex-wrap items-start justify-start py-[3.5rem] pr-[3.75rem] pl-[3.5rem] box-border gap-[8.125rem_7.875rem] max-w-full lg:gap-[8.125rem_3.938rem] lg:pl-[1.75rem] lg:pr-[1.875rem] lg:box-border mq750:gap-[8.125rem_1.938rem] mq750:pt-[2.25rem] mq750:pb-[2.25rem] mq750:box-border mq450:gap-[8.125rem_1rem]"
+        className="flex-1 bg-white overflow-hidden flex flex-row flex-wrap items-start justify-start py-[3.5rem] pr-[3.75rem] pl-[3.5rem] box-border gap-[8.125rem_7.875rem] max-w-full lg:gap-[8.125rem_3.938rem] lg:pl-[1.75rem] lg:pr-[1.875rem] lg:box-border mq750:gap-[0rem] mq750:pt-[2.25rem] mq750:pb-[2.25rem] mq750:box-border mq450:gap-[1rem]"
         data-scroll-to="personlizedServicesContainer"
       >
         <img
@@ -11,7 +11,7 @@ const PersonalizedServices = () => {
           alt=""
           src="/photo-11@2x.png"
         />
-        <div className="w-[34rem] flex flex-col items-start justify-start pt-[8.625rem] px-[0rem] pb-[0rem] box-border max-w-full">
+        <div className="w-[34rem] flex flex-col items-start justify-start pt-[1rem] px-[0rem] pb-[0rem] box-border max-w-full">
           <div className="self-stretch flex flex-col items-start justify-start gap-[1rem] max-w-full">
             <div className="relative inline-block max-w-full mq450:text-[1.188rem]">
               COMMITMENT GUARANTEED
