@@ -101,9 +101,9 @@ const Header = () => {
       <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
         <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10">
           <div className="hidden lg:flex">
-          <SidebarMenu/>
+            <SidebarMenu />
           </div>
-          <div class="lg:hidden flex items-center w-full font-semibold">
+          <div class="lg:hidden flex items-center w-full font-semibold cursor-default">
             Residential | Commercial
           </div>
           <button href="/" class="hidden lg:flex items-center cursor-pointer"
@@ -113,15 +113,15 @@ const Header = () => {
           </button>
           <div class="flex justify-between items-center w-full lg:hidden cursor-pointer" id="mobile-menu-2">
             <ul class="flex flex-row mt-4 font-normal lg:flex-row lg:space-x-8 lg:mt-0 text-sm">
-              <li>
-                <Link href="#" class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ideas</Link>
-              </li>
-              <li>
-                <Link href="/contact" class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</Link>
-              </li>
-              <li>
-                <Link href="/about-us" class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About us</Link>
-              </li>
+              <ul>
+                <div href="#" onClick={() => handleNavigation("./")} class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Ideas</div>
+              </ul>
+              <ul>
+                <div href="/contact" onClick={() => handleNavigation("./contact")} class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</div>
+              </ul>
+              <ul>
+                <div href="/about-us" onClick={() => handleNavigation("./about-us")} class="block cursor-pointer py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About us</div>
+              </ul>
             </ul>
           </div>
           <div class="flex items-center lg:order-2 md:border-l-2 pl-4">
@@ -140,146 +140,148 @@ const Header = () => {
 
 
         <div class="lg:hidden flex justify-center items-center mt-6">
-          <div class="lg:hidden flex justify-between items-center w-full lg:w-auto lg:order-1" id="mobile-menu-2">
+          <div class="lg:hidden flex justify-between items-center lg:w-auto lg:order-1" id="mobile-menu-2">
             <ul class="flex flex-row mt-4 font-normal justify-between space-x-8 lg:mt-0 text-sm">
-              <li>
+              <div onClick={() => handleNavigation("./")} className="cursor-pointer">
                 <img src="/bt-logo-2024-long@2x.png" className="h-auto w-40" />
-              </li>
-              <li>
-                <div className="bg-gray-100 flex items-center justify-center">
-                  <div className="relative inline-block text-left">
-                    <button id="dropdown-button" onMouseEnter={toggleDropdown} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
-                      Design
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                    {isOpen && (
-                      <div id="dropdown-menu" onMouseLeave={closeDropdown} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./conceptual-modelling-plannin1")}>
-                            Conceptual Modelling
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./conceptual-modelling-plannin1")}>
-                            Planning
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./construction-design")}>
-                            Construction Design
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./construction-management")}>
-                            Construction Management
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./accessible-construction")}>
-                            Accessible Construction
-                          </a>
+
+              </div>
+              <div className="flex flex-row justify-between space-x-8">
+
+                <ul>
+                  <div className="bg-gray-100 flex items-center justify-center">
+                    <div className="relative inline-block text-left">
+                      <button id="dropdown-button" onMouseEnter={toggleDropdown} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+                        Design
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                      {isOpen && (
+                        <div id="dropdown-menu" onMouseLeave={closeDropdown} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                          <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button">
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./conceptual-modelling-plannin1")}>
+                              Conceptual Modelling
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./conceptual-modelling-plannin1")}>
+                              Planning
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./construction-design")}>
+                              Construction Design
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./construction-management")}>
+                              Construction Management
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./accessible-construction")}>
+                              Accessible Construction
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div className="bg-gray-100 flex items-center justify-center">
-                  <div className="relative inline-block text-left">
-                    <button id="dropdown-button2" onMouseEnter={toggleDropdown2} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
-                      Carpentry
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                    {isOpen2 && (
-                      <div id="dropdown-menu2" onMouseLeave={closeDropdown2} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button2">
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./custom-homes")}>
-                            Custom Homes
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./addition-renovations")}>
-                            Additions & Renovations
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./kitchens")}>
-                            Kitchens
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./bathrooms")}>
-                            Bathrooms
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./carpentry-page")}>
-                            Trim
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./d-e-c-k-s-p-a-t-i-o-s")}>
-                            Decks & Patios
-                          </a>
+                </ul>
+                <ul>
+                  <div className="bg-gray-100 flex items-center justify-center">
+                    <div className="relative inline-block text-left">
+                      <button id="dropdown-button2" onMouseEnter={toggleDropdown2} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+                        Carpentry
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                      {isOpen2 && (
+                        <div id="dropdown-menu2" onMouseLeave={closeDropdown2} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                          <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button2">
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./custom-homes")}>
+                              Custom Homes
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./addition-renovations")}>
+                              Additions & Renovations
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./kitchens")}>
+                              Kitchens
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./bathrooms")}>
+                              Bathrooms
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./carpentry-page")}>
+                              Trim
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./d-e-c-k-s-p-a-t-i-o-s")}>
+                              Decks & Patios
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div className="bg-gray-100 flex items-center justify-center">
-                  <div className="relative inline-block text-left">
-                    <button id="dropdown-button3" onMouseEnter={toggleDropdown3} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
-                      Staircases
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                    {isOpen3 && (
-                      <div id="dropdown-menu3" onMouseLeave={closeDropdown3} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button3">
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
-                            Open Riser
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
-                            Closed Riser
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
-                            Retrofit
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
-                            Exterior
-                          </a>
+                </ul>
+                <ul>
+                  <div className="bg-gray-100 flex items-center justify-center">
+                    <div className="relative inline-block text-left">
+                      <button id="dropdown-button3" onMouseEnter={toggleDropdown3} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+                        Staircases
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                      {isOpen3 && (
+                        <div id="dropdown-menu3" onMouseLeave={closeDropdown3} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                          <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button3">
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
+                              Open Riser
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
+                              Closed Riser
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
+                              Retrofit
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./staircases-pages")}>
+                              Exterior
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <div className="bg-gray-100 flex items-center justify-center">
-                  <div className="relative inline-block text-left">
-                    <button id="dropdown-button4" onMouseEnter={toggleDropdown4} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
-                      Casework
-                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                      </svg>
-                    </button>
-                    {isOpen4 && (
-                      <div id="dropdown-menu4" onMouseLeave={closeDropdown4} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
-                        <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button4">
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
-                            Cabinetry
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
-                            Closets
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
-                            Display Cases
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
-                            Custom Millwork
-                          </a>
-                          <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
-                            Inlays & Decal
-                          </a>
+                </ul>
+                <ul>
+                  <div className="bg-gray-100 flex items-center justify-center">
+                    <div className="relative inline-block text-left">
+                      <button id="dropdown-button4" onMouseEnter={toggleDropdown4} className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-blue-500">
+                        Casework
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fillRule="evenodd" d="M6.293 9.293a1 1 0 011.414 0L10 11.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                        </svg>
+                      </button>
+                      {isOpen4 && (
+                        <div id="dropdown-menu4" onMouseLeave={closeDropdown4} className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                          <div className="py-2 p-2" role="menu" aria-orientation="vertical" aria-labelledby="dropdown-button4">
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
+                              Cabinetry
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
+                              Closets
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
+                              Display Cases
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
+                              Custom Millwork
+                            </a>
+                            <a className="flex rounded-md px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active:bg-blue-100 cursor-pointer" role="menuitem" onClick={() => handleNavigation("./casework-page")}>
+                              Inlays & Decal
+                            </a>
+                          </div>
                         </div>
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </div>
-                </div>
-              </li>
-              <li>
-                <img src="" className="h-auto w-40" />
-              </li>
+                </ul>
+              </div>
+
             </ul>
           </div>
         </div>
