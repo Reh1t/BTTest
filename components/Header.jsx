@@ -97,7 +97,7 @@ const Header = () => {
 
   return (
     <header className="bg-white font-text-regular-normal max-w-full z-10 fixed top-0 left-0 right-0">
-      <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 py-5">
+      <nav class="bg-transparent bg-opacity-0 px-4 lg:px-6 pt-5">
         <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10">
           <div className="hidden lg:flex">
             <SidebarMenu />
@@ -140,7 +140,7 @@ const Header = () => {
         {/* Lower Bar */}
 
 
-        <div class="lg:hidden flex justify-center items-center mt-6">
+        <div class="lg:hidden flex justify-center items-center">
           <div class="lg:hidden flex justify-between items-center lg:w-auto lg:order-1" id="mobile-menu-2">
             <ul class="flex flex-row mt-4 font-normal justify-between space-x-8 lg:mt-0 text-sm">
               <div onClick={() => handleNavigation("./")} className="cursor-pointer">
