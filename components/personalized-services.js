@@ -6,11 +6,12 @@ const PersonalizedServices = () => {
         data-scroll-to="personlizedServicesContainer"
       >
         <img
-          className="flex-1 relative rounded-3xs max-w-full overflow-hidden object-cover min-w-[20.938rem]"
+          className="flex-1 relative rounded-3xs overflow-hidden object-cover min-w-[20.938rem]"
           loading="lazy"
-          alt=""
-          src="/photo-11@2x.png"
+          alt="Slider"
+          src="/slide.gif"
         />
+
         <div className="w-[34rem] flex flex-col items-start justify-start pt-[1rem] px-[0rem] pb-[0rem] box-border max-w-full">
           <div className="self-stretch flex flex-col items-start justify-start gap-[1rem] max-w-full">
             <div className="relative inline-block max-w-full mq450:text-[1.188rem]">
