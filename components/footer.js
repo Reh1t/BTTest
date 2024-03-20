@@ -29,7 +29,7 @@ const Footer = () => {
               <li onClick={() => handleNavigation("/addition-renovations")}>Renovations</li>
               <li onClick={() => handleNavigation("/kitchens")}>Kitchens</li>
               <li onClick={() => handleNavigation("/bathrooms")}>Bathrooms</li>
-              <li onClick={() => handleNavigation("/accessible-construction")}>Accessible Constructions</li>
+              <li onClick={() => handleNavigation("/accessible-construction")}>Accessible Construction</li>
               <li onClick={() => handleNavigation("/carpentry-page")}>Trim</li>
               <li onClick={() => handleNavigation("/d-e-c-k-s-p-a-t-i-o-s")}>Decks & Patios</li>
             </ul>

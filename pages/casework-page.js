@@ -43,7 +43,7 @@ const CaseworkPage = () => {
           className="h-[436px] flex-1 max-w-full overflow-hidden object-cover min-w-[335px]"
           loading="lazy"
           alt=""
-          src="/BT_2024_Casework0.png"
+          src="/AdobeStock_249599480.jpeg"
         />
       </section>
       <section className="self-stretch bg-white overflow-hidden flex flex-row flex-wrap items-center justify-center py-14 pr-[73px] pl-[67px] box-border gap-[50px_69px] max-w-full text-left text-21xl text-kuno-red font-footer-bold-text lg:gap-[50px_69px] lg:pl-[33px] lg:pr-9 lg:box-border mq750:gap-[50px_69px] mq750:pt-9 mq750:pb-9 mq750:box-border">
@@ -51,7 +51,7 @@ const CaseworkPage = () => {
           className="h-[436px] flex-1 max-w-full overflow-hidden object-cover min-w-[335px]"
           loading="lazy"
           alt=""
-          src="/BT_2024_Casework3.png"
+          src="/AdobeStock_159043954.jpeg"
         />
         <div class="flex flex-col items-start justify-start gap-[16px_0px] max-w-full">
           <h1 class="m-0 w-full max-w-[577px] relative text-inherit font-bold font-inherit inline-block mq450:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
@@ -69,7 +69,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/BT_2024_Casework2.png"
+            src="/AdobeStock_638975788.jpeg"
           />
         </div>
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">
@@ -77,7 +77,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/BT_2024_Casework1.png"
+            src="/AdobeStock_159044048.jpeg"
           />
         </div>
       </section>
@@ -110,7 +110,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/BT_2024_Casework5.png"
+            src="/AdobeStock_103563184.jpeg"
           />
         </div>
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">
@@ -118,7 +118,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/BT_2024_Casework4.png"
+            src="/AdobeStock_666830706.jpeg"
           />
         </div>
       </section>
