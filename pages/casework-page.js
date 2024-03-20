@@ -110,7 +110,7 @@ const CaseworkPage = () => {
             className="w-[654px] h-[436px] relative object-cover max-w-[104%] shrink-0"
             loading="lazy"
             alt=""
-            src="/AdobeStock_103563184.jpeg"
+            src="/AdobeStock_103563184.jpg"
           />
         </div>
         <div className="h-[418px] w-[626px] overflow-hidden shrink-0 flex flex-col items-start justify-start max-w-full">

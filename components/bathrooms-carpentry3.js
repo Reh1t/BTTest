@@ -36,7 +36,7 @@ const BathroomsCarpentry3 = () => {
         <img
           className="self-stretch flex-1 relative rounded-3xs max-w-full overflow-hidden max-h-full object-cover mq1225:self-stretch mq1225:w-auto"
           alt=""
-          src="/AdobeStock_655895026.jpeg"
+          src="/AdobeStock_655895026.jpg"
         />
       </div>
     </section>
