@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import SidebarMenu from "./SidebarDark";
-import Link from "next/link";
-import { FaSignOutAlt } from 'react-icons/fa';
 import { useRouter } from 'next/router';
 
 const Header = () => {
@@ -98,7 +96,7 @@ const Header = () => {
   return (
     <header className="bg-white font-text-regular-normal max-w-full z-10 fixed top-0 left-0 right-0">
       <nav class="bg-transparent bg-opacity-0 px-44 lg:px-6 pt-5">
-        <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10 pr-4 border-b border-gray-100">
+        <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10 pr-4">
           <div className="hidden lg:flex">
             <SidebarMenu />
           </div>
@@ -118,7 +116,7 @@ const Header = () => {
                 <div href="/contact" onClick={() => handleNavigation("./contact")} class="block cursor-pointer py-2  text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</div>
               </ul>
               <ul>
-                <div href="/about-us" onClick={() => handleNavigation("./about-us")} class="block cursor-pointer w-20 py-2  text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</div>
+                <div href="/about-us" onClick={() => handleNavigation("./about-us")} class="block cursor-pointer py-2  text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</div>
               </ul>
               <ul>
                 <div href="#" onClick={() => handleNavigation("./")} class="block cursor-pointer py-2  text-gray-900 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-600 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Login</div>
