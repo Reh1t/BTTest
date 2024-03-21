@@ -96,7 +96,7 @@ const Header = () => {
   return (
     <header className="bg-white font-text-regular-normal max-w-full z-10 fixed top-0 left-0 right-0">
       <nav class="bg-transparent bg-opacity-0 px-44 lg:px-6 pt-5">
-        <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10 pr-4">
+        <div class="flex justify-between items-center mx-auto max-w-screen-xl h-10 pr-4" style={{ borderBottom: '2px solid black' }}>
           <div className="hidden lg:flex">
             <SidebarMenu />
           </div>
@@ -140,7 +140,7 @@ const Header = () => {
         {/* Lower Bar */}
 
 
-        <div class="lg:hidden flex justify-between items-center border-t border-gray-100">
+        <div class="lg:hidden flex justify-between items-center pt-2">
           <div class="flex items-center" id="mobile-menu-2">
             <div onClick={() => handleNavigation("./")} className="cursor-pointer">
               <img src="/bt-logo-2024-long@2x.png" className="h-auto w-40" />
